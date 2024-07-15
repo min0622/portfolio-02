@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viaEuro</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+
+        <!-- header -->
+        <header>
+
+            <div class="header_inner">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="logo">
+                        <span class="h_hidden">비아유로</span>
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./brand.html">브랜드 소개</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./brand.html">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">BI</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./theme.html">여행준비</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./theme.html">테마별 여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">숙소</a>
+                                </li>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">투어 & 티켓</a>
+                                </li>
+                                <li>
+                                    <a href="#">맛집</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./travel_tip.html">커뮤니티</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./travel_tip.html">여행 팁 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행 후기</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통방</a>
+                                </li>
+                                <li>
+                                    <a href="#">동행방</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">이벤트 & 할인</a>
+                        </li>
+
+                        <li>
+                            <a href="#">여행자 센터</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">현지 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">긴급 연락처</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자 보험</a>
+                                </li>
+                                <li>
+                                    <a href="#">유심 · 이심</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="btn_box">
+                    <button type="button" class="sch">
+                        <span class="h_hidden">검색</span>
+                    </button>
+                    <button type="button" class="login">
+                        <span class="h_hidden">로그인</span>
+                    </button>
+                    <button type="button" class="menu">
+                        <span class="line line_1"></span>
+                        <span class="line line_2"></span>
+                        <span class="line line_3"></span>
+                        <span class="h_hidden">메뉴</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="side_menu">
+                <div class="side_inner">
+                    <ul>
+                        <li>
+                            <a href="./brand.html">브랜드 소개</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./brand.html">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">BI</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./theme.html">여행준비</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./theme.html">테마별 여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">숙소</a>
+                                </li>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">투어 & 티켓</a>
+                                </li>
+                                <li>
+                                    <a href="#">맛집</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./travel_tip.html">커뮤니티</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./travel_tip.html">여행 팁 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행 후기</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통방</a>
+                                </li>
+                                <li>
+                                    <a href="#">동행방</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">이벤트 & 할인</a>
+                        </li>
+
+                        <li>
+                            <a href="#">여행자 센터</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">현지 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">긴급 연락처</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자 보험</a>
+                                </li>
+                                <li>
+                                    <a href="#">유심 · 이심</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="side_bg"></div>
+
+        </header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main>
+            <div class="main_inner">
+                <div class="flow_text_box">
+                    <div class="flow_text thin">
+                        <div class="t1">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+                        <div class="t1 delay">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+
+                    </div>
+                    <div class="flow_text semi">
+                        <div class="t1">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+                        <div class="t1">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+                    </div>
+                    <div class="flow_text bold">
+                        <div class="t1">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+                        <div class="t1">
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                            <span>Plan Your Adventure with viaEuro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video_box">
+                    <div class="video_inner">
+                        <video autoplay muted loop>
+                            <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
+                        </video>
+                        <p>Right now, to Europe</p>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <!-- //main -->
+
+
+        <!-- section1 -->
+        <section id="section_1">
+            <div class="section_head">
+                <h2 class="title">유럽 여행의 모든 것을<br>
+                    ViaEuro에서 해결해보세요</h2>
+            </div>
+
+            <div class="flow_box">
+                <div class="flow_inner">
+
+                    <div class="f_box f1">
+                        <figure>
+                            <img src="./img/main/flow/1_s1.png" alt="1_s1">
+                        </figure>
+                        <div class="box">
+                            <figure>
+                                <img src="./img/main/flow/1_s2.png" alt="1_s2">
+                            </figure>
+                            <figure>
+                                <img src="./img/main/flow/1_s3.png" alt="1_s3">
+                            </figure>
+                        </div>
+                        <figure>
+                            <img src="./img/main/flow/1_s4.png" alt="1_s4">
+                        </figure>
+                        <figure>
+                            <img src="./img/main/flow/1_s5.png" alt="1_s5">
+                        </figure>
+                    </div>
+
+                    <div class="f_box f2">
+                        <figure>
+                            <img src="./img/main/flow/2_s1.png" alt="2_s1">
+                        </figure>
+                        <div class="box">
+                            <figure>
+                                <img src="./img/main/flow/2_s2.png" alt="2_s2">
+                            </figure>
+                            <figure>
+                                <img src="./img/main/flow/2_s3.png" alt="2_s3">
+                            </figure>
+                        </div>
+                        <figure>
+                            <img src="./img/main/flow/2_s4.png" alt="2_s4">
+                        </figure>
+                        <figure>
+                            <img src="./img/main/flow/2_s5.png" alt="2_s5">
+                        </figure>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+
+
+        <!-- section2 -->
+        <section id="section_2">
+            <div class="section_head">
+                <h2 class="title">여행 준비, 무엇부터 하면 될까요?</h2>
+            </div>
+
+            <div class="step_box">
+
+                <div class="step step_1">
+                    <a href="#">
+                        <div class="step-inner">
+                            <div class="text">
+                                <p class="step_info">Travel Itinerary</p>
+                                <p class="step_title">여행 계획</p>
+                                <p class="step_desc">언제, 어디로, 어떻게 갈지 체계적으로 계획해 보세요. 우선, 테마별 여행지 추천을 통해 어디로 갈 건지 결정해 보세요.
+                                    viaEuro와 함께 단계별로 계획을 세우고 효율적으로 일정을 관리해 보세요.
+                                </p>
+                            </div>
+                            <a href="#" class="btn_more step_more">
+                                <div class="btn_circle">
+                                    <div class="btn_circle_img">
+                                        <img src="./img/main/step/btn_circle.png" alt="circle">
+                                    </div>
+                                    <div class="btn_circle_arrow">
+                                        <img src="./img/main/step/btn_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="step_img">
+                            <img src="./img/main/step/plane_1.png" alt="1">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="step step_2">
+                    <a href="#">
+                        <div class="step-inner">
+                            <div class="text">
+                                <p class="step_info">Accommodation</p>
+                                <p class="step_title">숙소</p>
+                                <p class="step_desc">저렴한 호스텔, 한인 민박부터 럭셔리 호텔까지 다양한 숙박 옵션을 비교하고 예약하세요. 위치, 가격, 이용 후기 등을
+                                    통해 취향에 맞는 아늑한 숙소를 찾아보세요.
+                                </p>
+                            </div>
+                            <a href="#" class="btn_more step_more">
+                                <div class="btn_circle">
+                                    <div class="btn_circle_img">
+                                        <img src="./img/main/step/btn_circle.png" alt="circle">
+                                    </div>
+                                    <div class="btn_circle_arrow">
+                                        <img src="./img/main/step/btn_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="step_img">
+                            <img src="./img/main/step/accommodation_2.png" alt="2">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="step step_3">
+                    <a href="#">
+                        <div class="step-inner">
+                            <div class="text">
+                                <p class="step_info">Transportation</p>
+                                <p class="step_title">교통 및 이동수단</p>
+                                <p class="step_desc">유럽 내 이동을 위한 교통편 정보와 티켓 예약 서비스를 제공합니다. 기차, 버스, 항공편 등 다양한 교통 수단에 대한
+                                    최신 정보를 통해 편리하고 효율적인 여행을 계획하세요.
+                                </p>
+                            </div>
+                            <a href="#" class="btn_more step_more">
+                                <div class="btn_circle">
+                                    <div class="btn_circle_img">
+                                        <img src="./img/main/step/btn_circle.png" alt="circle">
+                                    </div>
+                                    <div class="btn_circle_arrow">
+                                        <img src="./img/main/step/btn_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="step_img">
+                            <img src="./img/main/step/transportation_3.png" alt="3">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="step tep_4">
+                    <a href="#">
+                        <div class="step-inner">
+                            <div class="text">
+                                <p class="step_info">Tours & Tickets</p>
+                                <p class="step_title">투어 & 티켓</p>
+                                <p class="step_desc">인기 관광지와 현지 투어, 공연 티켓 등을 미리 예약하고 할인 혜택을 받아보세요. 박물관 입장권, 도시 투어 버스 티켓,
+                                    전시회 등 다양한 옵션을 통해 여행을 더욱 풍성하게 즐길 수 있습니다.
+                                </p>
+                            </div>
+                            <a href="#" class="btn_more step_more">
+                                <div class="btn_circle">
+                                    <div class="btn_circle_img">
+                                        <img src="./img/main/step/btn_circle.png" alt="circle">
+                                    </div>
+                                    <div class="btn_circle_arrow">
+                                        <img src="./img/main/step/btn_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="step_img">
+                            <img src="./img/main/step/tour_4.png" alt="4">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="step step_5">
+                    <a href="#">
+                        <div class="step-inner">
+                            <div class="text">
+                                <p class="step_info">Top Restaurants</p>
+                                <p class="step_title">맛집</p>
+                                <p class="step_desc">유럽 각지의 맛집과 레스토랑 추천 리스트를 확인하세요. 현지 전통 음식부터 미슐랭 스타 레스토랑까지 다양한 맛집 정보를
+                                    제공합니다. 셰프 추천 메뉴와 인기 요리, 그리고 현지인들이 자주 찾는 숨겨진 맛집도 만나보실 수 있습니다.
+                                </p>
+                            </div>
+                            <a href="#" class="btn_more step_more">
+                                <div class="btn_circle">
+                                    <div class="btn_circle_img">
+                                        <img src="./img/main/step/btn_circle.png" alt="circle">
+                                    </div>
+                                    <div class="btn_circle_arrow">
+                                        <img src="./img/main/step/btn_arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="step_img">
+                            <img src="./img/main/step/food_5.png" alt="5">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- //section2 -->
+
+
+        <!-- section3 -->
+        <section id="section_3">
+            <div class="section_head">
+                <h2 class="title"><span>여행꿀팁</span>도 꼭 챙겨가세요</h2>
+            </div>
+
+            <div class="t_box">
+
+                <div class="tip tip_1">
+                    <a href="#">
+
+                        <div class="tip_box">
+
+                            <div class="top_text">
+                                <span class="m-color">Travel Tips</span>
+                                <div class="t_title">
+                                    <p>여행 팁</p>
+                                    <div class="arrow">
+                                        <img src="./img/main/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btm_text">
+                                <p>여행을 더욱 편리하게 만들어주는 유용한 조언과 꿀팁을 제공합니다.
+                                </p>
+                                <span class="m-color">#여행가방싸는방법 #짐꾸리기 #안전여행팁</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- <div class="tip tip_2">
+                    <a href="#">
+                        <div class="tip_box">
+                            <div class="top_text">
+                                <span class="m-color">Travel Guides</span>
+                                <div class="t_title">
+                                    <p>여행 가이드</p>
+                                    <div class="arrow">
+                                        <img src="./img/main/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btm_text">
+                                <p>여행 일정을 계획하고 현지에서의 활동을 돕는 정보 제공 가이드입니다.</p>
+                                <span class="m-color">#추천일정 #쇼핑 #맛집추천 </span>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+                <!-- <div class="tip tip_3">
+                    <a href="#">
+                        <div class="tip_box">
+                            <div class="top_text">
+                                <span class="m-color">Travel Budget Tips</span>
+                                <div class="t_title">
+                                    <p>여행 경비 절약 팁</p>
+                                    <div class="arrow">
+                                        <img src="./img/main/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btm_text">
+                                <p>여행 경비를 절약하는 간단하고 효과적인 방법들을 소개합니다.</p>
+                                <span class="m-color">#예산팁 #알뜰여행 #저비용여행</span>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+                <!-- <div class="tip tip_4">
+                    <a href="#">
+                        <div class="tip_box">
+                            <div class="top_text">
+                                <span class="m-color">Travel Knowledge</span>
+                                <div class="t-title">
+                                    <p>
+                                    </p>
+                                    <div class="arrow">
+                                        <img src="./img/main/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btm_text">
+                                <p>여행지의 역사적 배경부터 현지 문화, 주요 관광지 정보까지 다양한 여행 관련 지식을 다룹니다.</p>
+                                <span class="m-color">#여행상식 #문화상식 #긴급상황대처법</span>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+
+
+            </div>
+        </section>
+        <!-- //section3 -->
+
+
+        <!-- section4 -->
+        <section id="section_4">
+            <div class="section_head">
+                <h2 class="title">그리고<br>
+                    <span>커뮤니티에서</span>에서 함께 소통해봐요
+                </h2>
+            </div>
+
+            <div class="com_box">
+
+                <div class="c_box">
+                    <a href="#">
+                        <div class="c_img">
+                            <img src="./img/main/comu_1.png" alt="comu_1">
+                        </div>
+                        <div class="c_title">
+                            <p>소통방</p>
+                            <div class="c_arrow">
+                                <img src="./img/main/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="c_box">
+                    <a href="#">
+                        <div class="c_img">
+                            <img src="./img/main/comu_2.png" alt="comu_2">
+                        </div>
+                        <div class="c_title">
+                            <p>동행방</p>
+                            <div class="c_arrow">
+                                <img src="./img/main/arrow.png" alt="arrow">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- //section4 -->
+
+
+        <!-- section5 -->
+        <section id="section_5">
+            <div class="section_head">
+                <h2 class="title">유럽의 <span>현재 상황</span>을<br>
+                    체크해보세요.</h2>
+            </div>
+            <a href="#" class="more">
+                <div class="circle">
+                    <div class="circle_img">
+                        <img src="./img/main/circle.png" alt="circle">
+                    </div>
+                    <div class="circle_arrow">
+                        <img src="./img/main/circle_arrow.png" alt="circle">
+                    </div>
+                </div>
+            </a>
+
+        </section>
+        <!-- //section5 -->
+
+        <!-- flowtext -->
+        <div id="flow_text">
+            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
+            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
+            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
+            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
+        </div>
+        <!--//flowtext -->
+
+
+        <!-- footer -->
+        <footer>
+
+            <!-- top_btn -->
+            <div class="top_btn">
+                <div class="t_btn">
+                    <button type="button"></button>
+                </div>
+            </div>
+            <!-- //top_btn -->
+
+            <div class="footer_inner">
+                <div class="w_logo">
+                    <img src="./img/w_logo.png" alt="w_logo">
+                </div>
+                <div class="icons">
+                    <span>
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-facebook"></i>
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+
+        <!-- top_btn -->
+        <!-- <div class="top_btn">
+            <div class="t_btn">
+                <button type="button"></button>
+            </div>
+         </div> -->
+        <!-- //top_btn -->
+
+
+
+    </div>
+    <!-- //wrap -->
+
+
+</body>
+
+</html>

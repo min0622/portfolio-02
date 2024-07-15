@@ -1,0 +1,172 @@
+@import url(./common.css);
+
+#contents_wrap{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 176px;
+    position: relative;
+}
+#contents_wrap .contents_head{
+    width: 100%;
+    font-family: 'pre-b';
+    font-size:3.7rem ;
+    margin-bottom: 60px;
+}
+.contents_body{
+    font-size: 1.4rem;
+    font-family: 'pre-semi';
+}
+.contents_body ul{
+    display: flex;
+    gap: 84px;
+}
+.contents_body ul li{
+    padding: 0 .5rem .884rem .5rem;
+}
+.active{
+    font-family: 'pre-b';
+    color: var(--Mcolor--);
+    border-bottom: var(--Mcolor--) 2px solid;
+}
+
+/* 공통 */
+section:not(:first-of-type){
+    width: 100%;
+    max-width: 1740px;
+    padding: 0 20px;
+    margin: auto;
+    margin-bottom: 250px;
+}
+/* .section_head{
+    width: 100%;
+    max-width: 1740px;
+    padding: 0 20px;
+    margin: auto;
+} */
+h3{
+    font-family: 'pre-b';
+    font-size:2.8rem ;
+    line-height: 120%;
+    margin-bottom: 23px;
+}
+
+/* section_1 */
+#trend{
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.slide{
+    display: flex;
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+.item{
+    width: 512px;
+    height: 568px;
+    position: relative;
+    margin-right: 46px;
+    border-radius: 40px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+/* section_1 img */
+.i1-1{
+    background-image: url(../img/sub/sub2/1_algarve.png);
+}
+.i1-2{
+    background-image: url(../img/sub/sub2/1_antalya.png);
+}
+.i1-3{
+    background-image: url(../img/sub/sub2/1_amalfi.png);
+}
+.i1-4{
+    background-image: url(../img/sub/sub2/1_tallinn.png);
+}
+
+/* section_2 img */
+.i2-1{ background-image: url(../img/sub/sub2/2_paris.png);}
+.i2-2{ background-image: url(../img/sub/sub2/2_london.png);}
+.i2-3{background-image: url(../img/sub/sub2/2_florence.png);}
+.i2-4{background-image: url(../img/sub/sub2/2_prague.png);}
+
+/* section_3 img */
+.i3-1{ background-image: url(../img/sub/sub2/3_switzerland.png);}
+.i3-2{ background-image: url(../img/sub/sub2/3_croatia.png);}
+.i3-3{background-image: url(../img/sub/sub2/3_haifoss.png);}
+.i3-4{background-image: url(../img/sub/sub2/3_troll.png);}
+
+/* section_4 img */
+.i4-1{ background-image: url(../img/sub/sub2/4_rome.png);}
+.i4-2{ background-image: url(../img/sub/sub2/4_vatican.png);}
+.i4-3{background-image: url(../img/sub/sub2/4_greece.png);}
+.i4-4{background-image: url(../img/sub/sub2/4_istanbul.png);}
+
+/* section_5 img */
+.i5-1{ background-image: url(../img/sub/sub2/5_paragliding.png);}
+.i5-2{ background-image: url(../img/sub/sub2/5_cycling.png);}
+.i5-3{background-image: url(../img/sub/sub2/5_skiing.png);}
+
+
+.item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.item::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 54%, rgb(0,0,0));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item_inner{
+     width: 100%;
+    height: 100%;
+   /* background: linear-gradient(to bottom, rgba(0,0,0,0) 54%, rgb(0,0,0)); */
+    padding: 0 48px;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item_inner span{
+    display: inline-block;
+    margin-bottom: 8px;
+color: var(--Mcolor--);
+font-family: 'pre-semi';
+font-size: 1.4rem;
+line-height: 120%;
+}
+.item_inner p{
+    color: #fff;
+    font-family: 'pre-b';
+    font-size: 2rem;
+    line-height: 120%;
+}
+.grid{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+section:last-of-type{
+    margin-bottom: 300px;
+}

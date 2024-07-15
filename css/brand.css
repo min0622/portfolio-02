@@ -1,0 +1,303 @@
+@import url(./common.css);
+
+#contents_wrap{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 176px;
+    position: relative;
+}
+#contents_wrap .contents_head{
+    width: 100%;
+    font-family: 'pre-b';
+    font-size:3.7rem ;
+    margin-bottom: 60px;
+}
+.contents_body{
+    font-size: 1.4rem;
+    font-family: 'pre-semi';
+}
+.contents_body ul{
+    display: flex;
+    gap: 84px;
+}
+.contents_body ul li{
+    padding: 0 .5rem .884rem .5rem;
+}
+.active{
+    font-family: 'pre-b';
+    color: var(--Mcolor--);
+    border-bottom: var(--Mcolor--) 2px solid;
+}
+
+/* section_1 */
+#b_story{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/sub/sub1/section1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    /* overflow: hidden; */
+}
+.story_border{
+    font-family: "Outfit", sans-serif;
+    font-size: 160px;
+    font-weight: 500;
+    color: #fff;
+    opacity: .2;
+    /* text-shadow: 1.5px 1.5px 0 var(--Scolor--), -1.5px -1.5px 0 var(--Scolor--),  1.5px -1.5px 0 var(--Scolor--),  -1.5px 1.5px 0 var(--Scolor--), 1.5px 1.5px 0 var(--Scolor--); */
+    text-shadow:  1px 1px 0 var(--Scolor--), -1px -1px 0 var(--Scolor--), 1px -1px 0 var(--Scolor--), -1px 1px 0 var(--Scolor--), 1px 1px 0 var(--Scolor--);
+    position: absolute;
+    left: 13.2%;
+}
+.story_txt{
+width: 836px;
+position: absolute;
+right: 13.2%;
+top: 5.6rem;
+}
+
+.story_txt .story_in{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    font-family: 'pre-r';
+    font-size:1.1rem ;
+    color: #444;
+    line-height: 170%;
+    margin-top: 60px
+}
+
+
+/* h3 */
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/* section_2 */
+#b_name{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 250px
+}
+.name_v{
+    display: flex;
+    align-items: end;
+    gap: 140px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 74px;
+}
+.desc p{
+    font-family: 'pre-r';
+    font-size:1.3rem;
+    line-height: 150%;
+    columns: #444;
+    margin-top: 30px;
+}
+article:not(:last-of-type){
+    margin-bottom: 150px;
+}
+.name_e{
+   justify-content: end;
+}
+
+/* name */
+.name{
+width: 100%;
+overflow: hidden;
+height: 445px;
+max-width: 1280px;
+padding: 50px 10px;
+margin: auto;
+position: relative;
+text-align: center;
+/* background-color: antiquewhite; */
+}
+.name_border{
+    font-family: "Outfit", sans-serif;
+    font-size: 188px;
+    font-weight: 500;
+    color: #fff;
+    opacity: .2;
+    /* text-shadow: 1.5px 1.5px var(--Scolor--), -1.5px -1.5px var(--Scolor--),  -1.5px 1.5px var(--Scolor--),  1.5px -1.5px var(--Scolor--); */
+    text-shadow:  1px 1px 0 var(--Scolor--), -1px -1px 0 var(--Scolor--), 1px -1px 0 var(--Scolor--), -1px 1px 0 var(--Scolor--), 1px 1px 0 var(--Scolor--);
+    width: 100%;
+}
+.name_txt{
+    width: 100%;
+    position: absolute;
+  top: 11rem;
+    text-align: center;
+}
+.name_in{
+    color: #444;
+    font-family: 'pre-r';
+    font-size: 1.3rem;
+    line-height: 170%;
+}
+.name_in p:first-of-type{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding: 0 115px;
+
+}
+.name_in p:last-of-type{
+    padding: 0 180px;
+
+}
+
+/* section_3 */
+
+#b_slogan{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 250px;
+    padding: 170px 110px;
+    background-image:url(../img/sub/sub1/section3_.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#b_slogan::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.slogan_inner{
+    max-width: 1740px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.slogan_inner h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+}
+.slogan_txt{
+    width: 788px;
+    text-align: right;
+}
+.slogan_txt h4{
+    font-family: "Outfit", sans-serif;
+    font-size:2.7rem ;
+    font-weight:400 ;
+    margin-bottom: 10px;
+    line-height: 120%;
+
+}
+.slogan_txt h5{
+    font-family: 'pre-m';
+    font-size: 1.4rem;
+    margin-bottom: 71px;
+    margin-bottom: 8%;
+    line-height: 120%;
+
+}
+.slogan_txt p{
+    font-family:'pre-r' ;
+    font-size: 1.3rem ;
+    line-height: 170%;
+}
+
+
+/* 복사본 */
+/* #b_slogan{
+    width: 100%;
+    position: relative;
+    margin-top: 250px;
+    overflow: hidden;
+}
+#b_slogan .bg{
+width: 100%;
+height: 600px;
+position: absolute;
+z-index: -1;
+
+}
+
+.slogan_inner{
+    max-width: 1740px;
+    padding: 0 20px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+
+    
+}
+.slogan_inner h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+}
+.slogan_txt{
+    width: 788px;
+    text-align: right;
+}
+.slogan_txt h4{
+    font-family: "Outfit", sans-serif;
+    font-size:2.7rem ;
+    font-weight:400 ;
+    margin-bottom: 10px;
+    line-height: 120%;
+
+}
+.slogan_txt h5{
+    font-family: 'pre-m';
+    font-size: 1.4rem;
+    margin-bottom: 71px;
+    margin-bottom: 8%;
+    line-height: 120%;
+
+}
+.slogan_txt p{
+    font-family:'pre-r' ;
+    font-size: 1.3rem ;
+    line-height: 170%;
+} */
+
+
+
+/* footer */
+footer{
+    margin-top: -40px;
+}
