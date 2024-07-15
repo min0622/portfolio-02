@@ -261,7 +261,6 @@ footer{
     height: 400px;
     margin-top: 220px;
     background-color: #000;
-    color: #fff;
     border-radius: 40px 40px 0 0;
     display: flex;
     justify-content: center; 
@@ -299,6 +298,7 @@ footer .icons span{
     align-items: center;
     background-color: rgba(255,255,255,.15);
     font-size: 1.5rem;
+    color: #999;
 }
 
 /* footer > top_btn */
