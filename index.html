@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
+    <script src="./script/slick.js"></script>
+    <script src="./script/main.js"></script>
 </head>
 
 <body>
@@ -255,14 +260,14 @@
                 </div>
 
                 <div class="video_box">
-                    <div class="video_inner">
-                        <video autoplay muted loop>
-                            <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
-                        </video>
-                        <p>Right now, to Europe</p>
-                    </div>
+                    <!-- <div class="video_inner"> -->
+                    <video autoplay muted loop>
+                        <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
+                    </video>
+                    <p>Right now, to Europe</p>
+                    <!-- </div> -->
                 </div>
-                
+
             </div>
         </main>
         <!-- //main -->
@@ -320,6 +325,50 @@
 
 
                 </div>
+                <div class="flow_inner">
+
+                    <div class="f_box f1">
+                        <figure>
+                            <img src="./img/main/flow/1_s1.png" alt="1_s1">
+                        </figure>
+                        <div class="box">
+                            <figure>
+                                <img src="./img/main/flow/1_s2.png" alt="1_s2">
+                            </figure>
+                            <figure>
+                                <img src="./img/main/flow/1_s3.png" alt="1_s3">
+                            </figure>
+                        </div>
+                        <figure>
+                            <img src="./img/main/flow/1_s4.png" alt="1_s4">
+                        </figure>
+                        <figure>
+                            <img src="./img/main/flow/1_s5.png" alt="1_s5">
+                        </figure>
+                    </div>
+
+                    <div class="f_box f2">
+                        <figure>
+                            <img src="./img/main/flow/2_s1.png" alt="2_s1">
+                        </figure>
+                        <div class="box">
+                            <figure>
+                                <img src="./img/main/flow/2_s2.png" alt="2_s2">
+                            </figure>
+                            <figure>
+                                <img src="./img/main/flow/2_s3.png" alt="2_s3">
+                            </figure>
+                        </div>
+                        <figure>
+                            <img src="./img/main/flow/2_s4.png" alt="2_s4">
+                        </figure>
+                        <figure>
+                            <img src="./img/main/flow/2_s5.png" alt="2_s5">
+                        </figure>
+                    </div>
+
+
+                </div>
             </div>
         </section>
         <!-- //section1 -->
@@ -328,7 +377,8 @@
         <!-- section2 -->
         <section id="section_2">
             <div class="section_head">
-                <h2 class="title">여행 준비, 무엇부터 하면 될까요?</h2>
+                <h2 class="title">
+                    여행 준비, 무엇부터 하면 될까요?</h2>
             </div>
 
             <div class="step_box">
@@ -508,7 +558,7 @@
                     </a>
                 </div>
 
-                <!-- <div class="tip tip_2">
+               <div class="tip tip_2">
                     <a href="#">
                         <div class="tip_box">
                             <div class="top_text">
@@ -527,9 +577,9 @@
                             </div>
                         </div>
                     </a>
-                </div> -->
+                </div> 
 
-                <!-- <div class="tip tip_3">
+               <div class="tip tip_3">
                     <a href="#">
                         <div class="tip_box">
                             <div class="top_text">
@@ -548,7 +598,7 @@
                             </div>
                         </div>
                     </a>
-                </div> -->
+                </div> 
 
                 <!-- <div class="tip tip_4">
                     <a href="#">
@@ -583,7 +633,7 @@
         <section id="section_4">
             <div class="section_head">
                 <h2 class="title">그리고<br>
-                    <span>커뮤니티에서</span>에서 함께 소통해봐요
+                    <span>커뮤니티</span>에서 함께 소통해봐요
                 </h2>
             </div>
 
@@ -644,10 +694,12 @@
 
         <!-- flowtext -->
         <div id="flow_text">
-            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
-            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
-            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
-            <span>Discover Europe's Hidden Gems with <span class="fill">viaEuro</span></span>
+            <div class="flow_txt">
+                <img src="./img/main/flow_text.png" alt="txt">
+                <img src="./img/main/flow_text.png" alt="txt">
+                <img src="./img/main/flow_text.png" alt="txt">
+            </div>
+       
         </div>
         <!--//flowtext -->
 
@@ -664,37 +716,40 @@
             <!-- //top_btn -->
 
             <div class="footer_inner">
+
                 <div class="w_logo">
                     <img src="./img/w_logo.png" alt="w_logo">
                 </div>
-                <div class="icons">
-                    <span>
-                        <i class="fa-brands fa-instagram"></i>
-                    </span>
-                    <span>
-                        <i class="fa-brands fa-youtube"></i>
-                    </span>
-                    <span>
-                        <i class="fa-brands fa-twitter"></i>
-                    </span>
-                    <span>
-                        <i class="fa-brands fa-facebook"></i>
-                    </span>
+                <ul class="side">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">취소 및 환불 정책</a></li>
+                </ul>
+                <div class="btm_box">
+                    <div class="copyright">
+                        <p>이 사이트는 100% 개인작업입니다.</p>
+                        <p>ⓒ copyright Ko Minchae. All Rights Reserved.</p>
+                    </div>
+                    <div class="icons">
+                        <span>
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                    </div>
                 </div>
+
             </div>
         </footer>
         <!-- //footer -->
-
-
-        <!-- top_btn -->
-        <!-- <div class="top_btn">
-            <div class="t_btn">
-                <button type="button"></button>
-            </div>
-         </div> -->
-        <!-- //top_btn -->
-
-
 
     </div>
     <!-- //wrap -->
