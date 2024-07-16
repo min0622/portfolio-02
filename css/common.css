@@ -258,7 +258,7 @@ button{
 /* footer */
 footer{
     width: 100%;
-    height: 400px;
+    height: 460px;
     margin-top: 220px;
     background-color: #000;
     border-radius: 40px 40px 0 0;
@@ -271,8 +271,9 @@ footer{
     max-width: 1740px;
     padding: 0 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: start; */
 }
 .w_logo{
     width: 160px;
@@ -282,13 +283,37 @@ footer{
     width: 100%;
     height: 100%;
 }
-footer .icons{
+footer .side{
+    color: #666;
+    font-size: 1rem;
+    font-family: 'pre-m';
+    line-height: 120%;
+    display: flex;
+    margin: 56px 0;
+    gap: 30px;
+
+}
+footer .btm_box{
+    color:#999;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.btm_box .copyright{
+    font-size: 0.9rem;
+    font-family: 'pre-r';
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btm_box .icons{
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-footer .icons span{
+.btm_box .icons span{
     display: block;
     width: 40px;
     height: 40px;
@@ -298,7 +323,7 @@ footer .icons span{
     align-items: center;
     background-color: rgba(255,255,255,.15);
     font-size: 1.5rem;
-    color: #999;
+    /* color: #999; */
 }
 
 /* footer > top_btn */
@@ -385,8 +410,6 @@ footer .top_btn {
         height: 380px;
     }
     .footer_inner{
-        max-width: 1068px;
-        padding: 0 20px;
         max-width: 1200px;
         padding: 0 16px;
     }
@@ -410,7 +433,22 @@ footer .top_btn {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:767px) {
+    footer{
+        height: 520px;
+        border-radius: 20px 20px 0 0;
+    }
+    footer .side{
+        flex-direction: column;
+        margin-top: 32px;
+        margin-bottom: 46px
+    }
+    footer .btm_box{
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+@media screen and (max-width:430px) {
     
     .header_inner{
         height: 60px;
@@ -425,12 +463,8 @@ footer .top_btn {
     }
 
     /* footer */
-    .footer_inner{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        height: 100%;
-        padding: 62px 16px;
+    footer{
+        height: 480px;
     }
     .w_logo{
         width: 89px;
@@ -438,7 +472,7 @@ footer .top_btn {
     }
 
 
-    footer .icons{
+    .btm_box .icons{
       flex-wrap: wrap;
     }
 

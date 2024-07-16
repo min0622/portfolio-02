@@ -153,7 +153,6 @@
      overflow: hidden;
      position: relative;
      padding: 90px 0;
-     /* background-color: beige; */
  }
 
  #section_1 .section_head {
@@ -168,7 +167,7 @@
      line-height: 130%;
  }
 
- /* flow */
+ /* flow_img*/
  #section_1 .flow_box {
      display: flex;
      width: 100%;
@@ -181,7 +180,7 @@
      width: 4184px;
      height: 100%;
      display: flex;
-     animation: flow_i 10s linear infinite;
+     animation: flow_i 20s linear infinite;
  }
 
  @keyframes flow_i {
@@ -215,7 +214,6 @@
 
  #section_1 .flow_box .f_box .box figure:first-of-type {
      padding: 0 15%;
-     /* background-color: salmon; */
  }
 
  /* section_2 */
@@ -227,7 +225,6 @@
      margin: auto;
      margin-top: 130px;
      padding: 90px 20px;
-     /* background-color: saddlebrown; */
  }
 
  #section_2 .section_head {
@@ -461,11 +458,10 @@
      width: 100%;
      max-width: 1740px;
      overflow: hidden;
-     /* position: relative; */
      padding: 90px 20px;
      display: flex;
      flex-direction: row-reverse;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      margin: auto;
      margin-top: 130px;
@@ -606,31 +602,17 @@
  /* flow_text */
  #flow_text {
      width: 100%;
-     white-space: nowrap;
-     text-align: center;
-     font-family: "Outfit", sans-serif;
-     font-size: 150px;
-     font-weight: 700;
-     color: #fff;
-     text-shadow: 1.5px 1.5px 0 var(--Mcolor--), -1.5px -1.5px 0 var(--Mcolor--), 1.5px -1.5px 0 var(--Mcolor--), -1.5px 1.5px 0 var(--Mcolor--), 1.5px 1.5px 0 var(--Mcolor--);
-     animation: flow 30s linear infinite;
-
-
- }
-
- #flow_text span {
-     display: inline-block;
- }
-
- #flow_text .fill {
-     color: var(--Mcolor--);
-     text-shadow: none;
- }
-
- /* .enter{
-    display: inline;
- } */
-
+     height: 143px;
+     overflow: hidden;
+     
+    }
+    .flow_txt{
+        width: 9174px;
+        gap: 30px;
+        height: 100%;
+        display: flex;
+       animation: flow 36s linear infinite; 
+}
 
 
 
@@ -691,6 +673,15 @@
 
      }
 
+     #section_1 .flow_box .f_box {
+        padding: 0 9px;
+        gap: 18px;
+    }
+   
+    #section_1 .flow_box .f_box .box {
+       /* 사진 2개 묶은 박스 */
+        gap: 18px;
+    }
 
      /* section_2 */
      #section_2 {
@@ -745,7 +736,7 @@
 
      .t_box {
          padding: 45px 0;
-         /* padding-left: 164px; */
+         padding-left: 164px;
          padding-left: 16px;
          gap: 70px;
      }
@@ -833,10 +824,15 @@
          height: 56px;
      }
 
-     #flow_text {
-         font-size: 100px;
-     }
+     /* flow_text */
+ #flow_text {
+    height: 96px;
+ }
+ .flow_txt{
+    width: 2040px;
+    animation: flow 20s linear infinite; 
 
+ }
      footer {
          margin-top: 180px;
 
@@ -1034,9 +1030,6 @@
         float: right;
     }
 
-    #flow_text {
-        font-size: 80px;
-    }
 
  }
 
@@ -1079,6 +1072,16 @@
          width: 1618px;
 
      }
+     
+     #section_1 .flow_box .f_box {
+        padding: 0 6px;
+        gap: 12px;
+    }
+   
+    #section_1 .flow_box .f_box .box {
+       /* 사진 2개 묶은 박스 */
+        gap: 12px;
+    }
 
      /* section_2 */
      #section_2 {
@@ -1227,9 +1230,17 @@
          height: 28px;
      }
 
+
+     /* flow_text */
      #flow_text {
-         font-size: 60px;
+        height: 58px;
      }
-   
+     .flow_txt{
+        width: 1223px;
+     }
+
+     footer{
+        margin-top: 150px;
+     }
 
  }
