@@ -608,13 +608,21 @@
     }
     .flow_txt{
         width: 9174px;
-        gap: 30px;
+        gap: 100px;
         height: 100%;
         display: flex;
-       animation: flow 36s linear infinite; 
+        animation: flow_txt 40s linear infinite; 
 }
 
+@keyframes flow_txt {
+    0% {
+       transform: translateX(0);
+   }
 
+   100% {
+       transform: translateX(-8000px);
+   }
+}
 
  /* 반응형 */
  @media screen and (max-width:1600px) {
@@ -635,7 +643,7 @@
      main .video_box {
          width: 55%;
          padding-bottom:30.94% ;
-         border-radius: 100px;
+         border-radius: 110px;
      }
  }
  @media screen and (max-width:1200px) {
@@ -829,7 +837,7 @@
  }
  .flow_txt{
     width: 2040px;
-    animation: flow 20s linear infinite; 
+    animation: flow 15s linear infinite; 
 
  }
      footer {
@@ -850,7 +858,7 @@
      main .video_box {
         width: 60%;
         padding-bottom:33.75% ;
-        border-radius: 90px;
+        border-radius: 100px;
     } 
 
      /* section_2 */
@@ -868,6 +876,7 @@
     main .video_box {
         width: 80%;
         padding-bottom:45% ;
+
     } 
 
       /* section_2 */
@@ -904,11 +913,13 @@
     }
 
  }
+
 @media screen and (max-width:680px){
     .step_desc {
        text-align: left;
     }
 }
+
  @media screen and (max-width:575px){
     
      /* main */
@@ -944,7 +955,6 @@
          /* section_2 */
          #section_2 .title {
             font-size: 2rem;
-            /* margin-bottom: 16px; */
         }
         #section_2 .step_box .step-inner,
         #section_2 .step_box .step_img img {
@@ -1046,7 +1056,8 @@
         height: 64px;
         line-height: 64px;
     }
-   
+
+   /* video */
     main .video_box p {
         font-size: 1.8rem;
     }
@@ -1054,7 +1065,8 @@
     main .video_box {
         width: 85%;
         padding-bottom: 47.81%;
-        border-radius:56px; 
+        /* border-radius:56px;  */
+        border-radius:60px; 
     }
 
      /* section_1 */
@@ -1236,6 +1248,7 @@
      }
      .flow_txt{
         width: 1223px;
+        gap: 50px;
      }
 
      footer{
