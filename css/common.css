@@ -46,7 +46,7 @@
 
 
 /* common >  z-index
-899  998   991 990  897 898 999
+899  998   991 990  897 898 999  896
 */
 
 
@@ -288,6 +288,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 896;
 }
 
 .footer_inner {
@@ -472,7 +474,7 @@ footer .top_btn {
 
 @media screen and (max-width:767px) {
     footer {
-        height: 520px;
+        height: 480px;
         border-radius: 20px 20px 0 0;
     }
 
@@ -506,7 +508,7 @@ footer .top_btn {
 
     /* footer */
     footer {
-        height: 480px;
+        height: 460px;
     }
 
     .g_logo {
