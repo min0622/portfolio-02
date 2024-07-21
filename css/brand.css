@@ -28,6 +28,9 @@
 .contents_body ul {
     display: flex;
     gap: 84px;
+
+    color: #777;
+
 }
 
 .contents_body ul li {
@@ -382,7 +385,6 @@ footer {
     #contents_wrap {
         padding-top: 160px;
         padding-bottom: 120px;
-
     }
 
     #contents_wrap .contents_head {
