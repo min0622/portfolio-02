@@ -56,7 +56,6 @@ header {
     /* overflow: hidden; */
     background-color: var(--Mcolor--);
     color: #fff;
-    position: relative;
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -72,7 +71,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .header_inner .logo a {
@@ -98,7 +96,6 @@ header {
 }
 
 .header_inner nav>ul>li {
-    position: relative;
     /* padding: .5rem 1.75rem; */
     padding: .5rem 3rem;
 }
@@ -173,6 +170,7 @@ header.on::after{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 button {
@@ -181,6 +179,7 @@ button {
     background-color: transparent;
     margin-left: 25px;
     cursor: pointer;
+    
 }
 
 .btn_box .sch {
@@ -201,9 +200,8 @@ button {
 
 .btn_box .menu {
     display: none;
-}
-
-
+    }
+ 
 
 
 /* side_menu */
@@ -214,11 +212,11 @@ button {
     overflow: hidden;
     position: fixed;
     top: 0;
-    /* right: 0; */
     right: -100%;
-    z-index: 991;
+    z-index: 999;
     background-color: #fff;
     /* padding-top: 106px; */
+    
 }
 
 
@@ -261,15 +259,16 @@ button {
 .side_inner {
     width: 100%;
     height: 100%;
-    padding: 2rem 50px;
-    margin-top: 5rem;
-    /* position: relative; */
+    /* padding: 2rem 50px; */
+    padding: 10vh 0;
+    padding-bottom: 30vh; 
     overflow-y: scroll;
-    /* overflow-x: hidden; */
+    /* margin-top: 5rem; */
 }
 
 .side_inner>ul>li {
-    padding: 2.3rem 0;
+    width: 100%;
+    padding: 2.3rem 50px;
 }
 
 .side_inner>ul>li>a {
@@ -293,35 +292,34 @@ button {
     justify-content: center;
     text-align: center;
     color: #fff;
+    padding: 6px;
 
-
-
-color: #000;
-    height: 0;
+    
     display: none;
 }
 
 .side_inner .submenu_2>li {
     width: 100%;
-    height: 100%;
-    padding: 8px 0;
+    border-radius: 10px;
+    /* padding: 8px 0;
+    padding: 2px 0; */
 }
 
 .side_inner .submenu_2>li>a {
     display: block;
     width: 98%;
     padding: 18px 0;
-    /* height: 98%; */
+    padding: 14px 0;
     margin: auto;
     border-radius: 10px;
     margin: auto;
 }
 
-.side_inner .submenu_2>li>a:hover {
+.side_inner .submenu_2>li:hover {
     background-color: #fff;
     color: var(--Mcolor--);
 
-    display: none;
+    /* display: none; */
 }
 
 /* side_bg */
@@ -349,7 +347,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     z-index: 896;
 }
 
@@ -485,7 +482,6 @@ footer .top_btn {
         flex-direction: column;
         justify-content: space-between;
         align-items: end;
-        position: relative;
         /* z-index: 999; */
     }
 
@@ -503,7 +499,7 @@ footer .top_btn {
 
     .menu .line_2 {
         width: 50%;
-    }
+    } 
 
     /* footer */
     footer {
