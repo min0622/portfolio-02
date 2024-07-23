@@ -782,6 +782,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
     <script>
 
+        // main
+        const ani = gsap.timeline();
+        ani.to('main .video_box', { width: '100vw', height: '100vh'})
+            .to('main .video_box', {scale:1.2})
+        ScrollTrigger.create({
+            animation: ani,
+            trigger: "main",
+            // start: "-1% top",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            markers: true,
+            anticipatePin: 1
+        });
+
+
+
+
+
         // section_2
         const section_2 = document.querySelector("#section_2");
         const horizontal = document.querySelector("#horizontal");
@@ -804,7 +824,7 @@
                 },
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
-        markers:true
+                markers: true
             }
         });
 
