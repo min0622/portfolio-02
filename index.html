@@ -784,14 +784,13 @@
 
         // main
         const ani = gsap.timeline();
-        ani.to('main .video_box', { width: '100vw', height: '100vh'})
-            .to('main .video_box', {scale:1.2})
+        ani.to('main .video_box', { width: '100vw', height: '100vh', duration:.5 })
+            .to('main .video_box', { scale: 1.2 })
         ScrollTrigger.create({
             animation: ani,
             trigger: "main",
-            // start: "-1% top",
-            start: "top top",
-            end: "+=3000",
+            start: "2% top",
+            end: "+=800",
             scrub: true,
             pin: true,
             markers: true,
@@ -829,6 +828,21 @@
         });
 
 
+
+        // header
+        const showNav = gsap.from("header", {
+            yPercent: -200,
+            paused: true,
+            duration: 0.2
+        }).progress(1);
+
+        ScrollTrigger.create({
+            start: "top top",
+            end: 99999,
+            onUpdate: (self) => {
+                self.direction === -1 ? showNav.play() : showNav.reverse()
+            }
+        });
 
 
 
