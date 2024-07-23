@@ -1,6 +1,5 @@
 
 @import url(./common.css);
-
 #wrap {
     width: 100%;
     /* overflow: hidden; */
@@ -14,6 +13,10 @@ header {
     /* background-color: rgba(255,255,255,.2); */
 
     color: #000;
+}
+.header_inner nav>ul>li>a.m_line::before{
+    background-color: var(--Mcolor--);
+
 }
 
 .btn_box .sch {
@@ -31,6 +34,7 @@ main {
     position: relative;
     top: 0;
     left: 0;
+
 }
 
 .main_inner {
@@ -115,10 +119,11 @@ main .flow_text_box .bold {
 /* vedio */
 main .video_box {
     width: 50%;
-    /* width: 80%; */
-    /* padding-bottom: 45%; */
     padding-bottom: 28.13%;
-    position: relative;
+
+    
+    /* position: relative; */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -127,6 +132,14 @@ main .video_box {
     border-radius: 120px;
     overflow: hidden;
 }
+
+/* main .video_box.big{
+    width: 100%;
+    padding-bottom: 56.25%;
+    transition-duration: 1.5s;
+    border-radius: 0;
+
+} */
 
 main .video_box video {
     width: 100%;
@@ -157,7 +170,7 @@ main .video_box p {
     position: relative;
     padding: 90px 0;
     background-color: #fff;
-
+    margin-top: 180px;
 }
 
 #section_1 .section_head {
@@ -227,27 +240,30 @@ main .video_box p {
 #section_2 {
     width: 100%;
     max-width: 1740px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    height: 100vh;
     position: relative;
     margin: auto;
     margin-top: 130px;
-    /* padding: 0 20px; */
-    padding: 90px 20px;
-    /* background-color: slategray; */
+    /* padding: 90px 20px; */
+    padding: 0 20px;
 /* margin-bottom:10vh; */
   
+}
+.s_hidden{
+    display: none;
 }
 
 #section_2 .section_head {
     width: 100%;
     text-align: center;
 padding-top: 45px;
-    height: 120px;
+    /* height: 120px; */
     /* background-color: gold; */
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    left: 0;
-    margin-bottom: 50px;
+    left: 0; */
+    margin-bottom: 25px;
 }
 
 #section_2 .title {
@@ -270,14 +286,14 @@ padding-top: 45px;
 
 #section_2 .step_box {
     width: 400%;
-    /* overflow: hidden; */
     display: flex;
+    /* overflow: hidden; */
     /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
     gap: 50px;
     position: relative;
-    flex-wrap: nowrap;
 
 
 }
@@ -350,11 +366,10 @@ padding-top: 45px;
 }
 
 .step_more {
-    display: block;
+   
     width: 100%;
     height: 90px;
     position: relative;
-
 }
 
 .btn_more {
@@ -397,10 +412,9 @@ padding-top: 45px;
     overflow: hidden;
     position: relative;
     z-index: 888;
-    /* margin-top: 130px; */
-    /* padding: 65px 0; */
+    margin-top: 15rem;
+    padding: 85px 0;
 
-    padding-top: 10rem;
     background-color: #fff;
 }
 
@@ -443,7 +457,7 @@ padding-top: 45px;
 
     .slick-slide{
         margin-right: 60px;
-        background-color: #fff;
+        /* background-color: #fff; */
     }  
      
     
