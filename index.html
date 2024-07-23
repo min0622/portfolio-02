@@ -822,6 +822,7 @@ mm.add("(min-width: 768px)", () => {
    
     const ani = gsap.timeline();
     // ani.from('main .video_box',{width: '50%', position:'absolute', top:'50%', left:'50%', transfrom:'translate(-50%,-50%)' })
+    ani.from('main .video_box',{xPercent:-50})
                 ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
                     .to('main .video_box', { scale: 1.2 })
                 ScrollTrigger.create({
@@ -842,6 +843,7 @@ mm.add("(max-width: 767px)", () => {
     
     const ani_mobile = gsap.timeline();
     // ani_mobile.from('main .video_box',{width: '50%', position:'absolute', top:'50%', left:'50%', transfrom:'translate(-50%,-50%)' })
+    ani_mobile.from('main .video_box',{yPercent:-50})
     ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100})
                     .to('main .video_box', { scale: 1.2 })
                 ScrollTrigger.create({
