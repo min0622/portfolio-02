@@ -57,130 +57,141 @@ $(function () {
 
 
   // section_3
-  $('#section_3 .t_box').slick({
-    // 포지션 레프트:0 일떄 아래것들 사용안함
-    //   centerMode: true,
-    //  centerPadding: '0',
-
-
-
-    // 포지션 레프트 적용! 아래것들 사용함!!
-    //   centerMode: true,
-    //  centerPadding: '100px',
-
-
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+  $('.t_box_inner').slick({
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    infinite: true,
     responsive: [
-      // {
-      //   breakpoint: 1401,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     // infinite: true,
-      //     dots: true
-      //   }
-      // },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
 
+          {
+            breakpoint: 1201,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 681,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+          centerPadding: '80px'
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+          centerPadding: '37px'
+            }
+          }
 
-          // slidesToShow: 1,
-          // slidesToScroll: 1,
+        ]
 
-
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '200px',
-          infinite: true
-
-          // slidesToShow: 2,
-          // slidesToScroll: 1,
-
-
-
-          //           slidesToShow: 1,
-          //           slidesToScroll: 1,
-          //   centerMode: true,
-          //  centerPadding: '200px'
-        }
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '120px',
-
-
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '100px'
-
-
-        }
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '60px'
-
-
-        }
-      },
-
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '20px'
-
-
-        }
-      },
-      {
-        breakpoint: 430,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: true,
-          centerPadding: '10px'
-
-
-        }
-      }
-
-    ]
   });
+
+
+
+
+
+
+  // $('#section_3 .t_box_inner').slick({
+
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 300,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   responsive: [
+
+  //     {
+  //       breakpoint: 1201,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //     // {
+  //     //   breakpoint: 991,
+  //     //   settings: {
+
+
+  //     //     slidesToShow: 1,
+  //     //     slidesToScroll: 1,
+  //     //     centerMode: true,
+  //     //     centerPadding: '200px',
+  //     //     infinite: true
+
+ 
+  //     //   }
+  //     // },
+  //     {
+  //       breakpoint: 890,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         centerMode: true,
+  //         centerPadding: '120px',
+
+
+  //       }
+  //     },
+  //     // {
+  //     //   breakpoint: 767,
+  //     //   settings: {
+  //     //     slidesToShow: 1,
+  //     //     slidesToScroll: 1,
+  //     //     infinite: true,
+  //     //     centerMode: true,
+  //     //     centerPadding: '100px'
+
+
+  //     //   }
+  //     // },
+  //     // {
+  //     //   breakpoint: 680,
+  //     //   settings: {
+  //     //     slidesToShow: 1,
+  //     //     slidesToScroll: 1,
+  //     //     infinite: true,
+  //     //     centerMode: true,
+  //     //     centerPadding: '60px'
+
+
+  //     //   }
+  //     // },
+
+  //     {
+  //       breakpoint: 576,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         centerMode: true,
+  //         centerPadding: '20px'
+
+
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 430,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         centerMode: true,
+  //         centerPadding: '10px'
+
+
+  //       }
+  //     }
+
+  //   ]
+  // });
 
 
 
