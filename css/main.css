@@ -1,9 +1,10 @@
 
 @import url(./common.css);
+
+
 #wrap {
     width: 100%;
-    /* overflow: hidden; */
-    overflow: visible;
+    overflow: hidden;
     position: relative;
 }
 
@@ -11,7 +12,7 @@
 header {
     background-color: #fff;
     /* background-color: rgba(255,255,255,.2); */
-
+background-color: transparent;
     color: #000;
 }
 .header_inner nav>ul>li>a.m_line::before{
@@ -34,7 +35,6 @@ main {
     position: relative;
     top: 0;
     left: 0;
-
 }
 
 .main_inner {
@@ -240,12 +240,11 @@ main .video_box p {
 #section_2 {
     width: 100%;
     max-width: 1740px;
-    overflow: hidden;
     position: relative;
     margin: auto;
     margin-top: 130px;
     padding: 0 20px;
-  
+    
 }
 .s_hidden{
     display: none;
@@ -263,17 +262,6 @@ padding-top: 45px;
     font-size: 3.5rem;
 }
 
-/* 
-#section_2 .step_box {
-    width: 100%;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    clip-path: inset(20px 60px 0 60px round 40px 40px 40px 40px);
-    clip-path: inset(28px 60px 0 60px round 40px 40px 40px 40px);
-    clip-path: inset(20px 20px 0 20px round 40px 40px 40px 40px);
-
-} */
 
 #section_2 .step_box {
     width: 400%;
