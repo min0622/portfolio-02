@@ -240,14 +240,11 @@ main .video_box p {
 #section_2 {
     width: 100%;
     max-width: 1740px;
-    /* overflow: hidden; */
-    height: 100vh;
+    overflow: hidden;
     position: relative;
     margin: auto;
     margin-top: 130px;
-    /* padding: 90px 20px; */
     padding: 0 20px;
-/* margin-bottom:10vh; */
   
 }
 .s_hidden{
@@ -258,16 +255,10 @@ main .video_box p {
     width: 100%;
     text-align: center;
 padding-top: 45px;
-    /* height: 120px; */
-    /* background-color: gold; */
-    /* position: sticky;
-    top: 0;
-    left: 0; */
     margin-bottom: 25px;
 }
 
 #section_2 .title {
-    /* margin-bottom: 50px; */
     font-family: 'pre-b';
     font-size: 3.5rem;
 }
