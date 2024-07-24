@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <link rel="stylesheet" href="./css/slick.css" type="text/css">
-    <!-- <link rel="stylesheet" href="./css/slick-theme.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./css/slick.css" type="text/css"> -->
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
-    <script src="./script/slick.min.js"></script>
+    <!-- <script src="./script/slick.min.js"></script> -->
     <script src="./script/main.js"></script>
 </head>
 
@@ -35,7 +35,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" class="m">브랜드 소개</a>
+                            <a href="./brand.html" class="m">브랜드 소개</a>
                             <ul class="submenu">
                                 <li>
                                     <a href="./brand.html">브랜드 스토리</a>
@@ -47,7 +47,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="m">여행준비</a>
+                            <a href="./theme.html" class="m">여행준비</a>
                             <ul class="submenu">
                                 <li>
                                     <a href="./theme.html">테마별 여행지</a>
@@ -68,7 +68,7 @@
                         </li>
 
                         <li>
-                            <a href="#" class="m">커뮤니티</a>
+                            <a href="./travel_tip.html" class="m">커뮤니티</a>
                             <ul class="submenu">
                                 <li>
                                     <a href="./travel_tip.html">여행 팁 공유</a>
@@ -277,7 +277,7 @@
                     <video autoplay muted loop>
                         <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
                     </video>
-                    <p>Right now, to Europe</p>
+                    <p class="v_txt">Right now, to Europe</p>
                     <!-- </div> -->
                 </div>
 
@@ -556,10 +556,11 @@
                 <h2 class="title"><span>여행꿀팁</span>도 꼭 챙겨가세요</h2>
             </div>
 
-            <div class="t_box">
-                <div class="t_box_inner">
+            <div class="t_box mySwiper">
 
-                    <div class="tip tip_1">
+                <div class="t_box_inner swiper-wrapper">
+
+                    <div class="tip tip_1 swiper-slide">
                         <a href="#">
 
                             <div class="tip_box">
@@ -583,7 +584,7 @@
                         </a>
                     </div>
 
-                    <div class="tip tip_2">
+                    <div class="tip tip_2 swiper-slide">
                         <a href="#">
                             <div class="tip_box">
                                 <div class="top_text">
@@ -604,7 +605,7 @@
                         </a>
                     </div>
 
-                    <div class="tip tip_3">
+                    <div class="tip tip_3 swiper-slide">
                         <a href="#">
                             <div class="tip_box">
                                 <div class="top_text">
@@ -625,7 +626,7 @@
                         </a>
                     </div>
 
-                    <div class="tip tip_4">
+                    <div class="tip tip_4 swiper-slide">
                         <a href="#">
                             <div class="tip_box">
                                 <div class="top_text">
@@ -925,6 +926,56 @@ mm.add("(max-width: 767px)", () => {
 
 
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.5,  //초기값 설정 모바일값이 먼저!!
+    centeredSlides: true,
+            loop:true,
+    spaceBetween: 20,
+    // grabCursor: true,
+    pagination: {
+      // el: ".swiper-pagination",
+      clickable: true,
+    },
+      breakpoints: {
+   
+        // 431:{
+        //     slidesPerView: 1.5, 
+        //     spaceBetween: 10,
+        // },
+        576:{
+            slidesPerView: 1.5, 
+            spaceBetween: 40,
+
+        },
+        768:{
+            slidesPerView: 2, 
+            spaceBetween: 40,
+
+        },
+        992:{
+            slidesPerView: 2, 
+            spaceBetween: 100,
+
+        },
+      1400: {
+          slidesPerView: 2, 
+          spaceBetween: 120,
+        //   centeredSlides: true,
+        },
+        1600 : {
+          slidesPerView: 3, 
+          spaceBetween: 90,
+        //   centeredSlides: true,
+          loop:false
+        },
+      },
+  });
+</script>
 
 </body>
 

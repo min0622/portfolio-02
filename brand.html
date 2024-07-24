@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/brand.css" type="text/css">
+    <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
+    <script src="./script/brand.js"></script>
 </head>
 
 <body>
@@ -18,19 +20,20 @@
 
        <!-- header -->
        <header>
-
-        <div class="header_inner">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./img/w_logo.png" alt="logo">
-                    <span class="h_hidden">비아유로</span>
-                </a>
-            </h1>
+           
+           <div class="header_inner">
+               
+               <h1 class="logo">
+                   <a href="./index.html">
+                       <img src="./img/w_logo.png" alt="logo">
+                       <span class="h_hidden">비아유로</span>
+                   </a>
+               </h1>
 
             <nav>
                 <ul>
                     <li>
-                        <a href="./brand.html">브랜드 소개</a>
+                        <a href="./brand.html" class="m">브랜드 소개</a>
                         <ul class="submenu">
                             <li>
                                 <a href="./brand.html">브랜드 스토리</a>
@@ -42,7 +45,7 @@
                     </li>
 
                     <li>
-                        <a href="./theme.html">여행준비</a>
+                        <a href="./theme.html" class="m">여행준비</a>
                         <ul class="submenu">
                             <li>
                                 <a href="./theme.html">테마별 여행지</a>
@@ -63,7 +66,7 @@
                     </li>
 
                     <li>
-                        <a href="./travel_tip.html">커뮤니티</a>
+                        <a href="./travel_tip.html" class="m">커뮤니티</a>
                         <ul class="submenu">
                             <li>
                                 <a href="./travel_tip.html">여행 팁 공유</a>
@@ -81,11 +84,11 @@
                     </li>
 
                     <li>
-                        <a href="#">이벤트 & 할인</a>
+                        <a href="#" class="m">이벤트 & 할인</a>
                     </li>
 
                     <li>
-                        <a href="#">여행자 센터</a>
+                        <a href="#" class="m">여행자 센터</a>
                         <ul class="submenu">
                             <li>
                                 <a href="#">현지 정보</a>
@@ -110,27 +113,37 @@
 
             <div class="btn_box">
                 <button type="button" class="sch">
-                    <span class="h_hidden">검색</span>
+                    <!-- <span class="h_hidden">검색</span> -->
                 </button>
                 <button type="button" class="login">
-                    <span class="h_hidden">로그인</span>
+                    <!-- <span class="h_hidden">로그인</span> -->
                 </button>
                 <button type="button" class="menu">
                     <span class="line line_1"></span>
                     <span class="line line_2"></span>
                     <span class="line line_3"></span>
-                    <span class="h_hidden">메뉴</span>
+                    <!-- <span class="h_hidden">메뉴</span> -->
                 </button>
             </div>
         </div>
 
 
         <div class="side_menu">
+
+            <div class="close_box">
+                <button type="button" class="close">
+                    <span class="line line_1"></span>
+                    <span class="line line_2"></span>
+                    <span class="h_hidden">닫기</span>
+                </button>
+            </div>
+
             <div class="side_inner">
                 <ul>
                     <li>
-                        <a href="./brand.html">브랜드 소개</a>
-                        <ul class="submenu">
+                        <!-- <a href="./brand.html">브랜드 소개</a> -->
+                        <a href="#">브랜드 소개</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./brand.html">브랜드 스토리</a>
                             </li>
@@ -141,8 +154,9 @@
                     </li>
 
                     <li>
-                        <a href="./theme.html">여행준비</a>
-                        <ul class="submenu">
+                        <!-- <a href="./theme.html">여행준비</a> -->
+                        <a href="#">여행준비</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./theme.html">테마별 여행지</a>
                             </li>
@@ -162,8 +176,9 @@
                     </li>
 
                     <li>
-                        <a href="./travel_tip.html">커뮤니티</a>
-                        <ul class="submenu">
+                        <!-- <a href="./travel_tip.html">커뮤니티</a> -->
+                        <a href="#">커뮤니티</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./travel_tip.html">여행 팁 공유</a>
                             </li>
@@ -185,7 +200,7 @@
 
                     <li>
                         <a href="#">여행자 센터</a>
-                        <ul class="submenu">
+                        <ul class="submenu_2">
                             <li>
                                 <a href="#">현지 정보</a>
                             </li>
