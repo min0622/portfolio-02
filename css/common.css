@@ -61,13 +61,14 @@ header {
     left: 0;
     z-index: 899;
     border-bottom: 1px solid #EFEFEF;
-
+    
+    transition:all 0.2s linear 0s;
 }
 
-/* .fix{
-    position: fixed;
-   animation: drop .25s ease;
-} */
+header.active{
+    transform: translateY(-100%);
+    transition:all 0.15s linear 0s;
+ }
 
 @keyframes drop {
     0%{

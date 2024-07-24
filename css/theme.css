@@ -25,6 +25,9 @@
 .contents_body ul{
     display: flex;
     gap: 84px;
+
+    color: #777;
+
 }
 .contents_body ul li{
     padding: 0 .5rem .884rem .5rem;
