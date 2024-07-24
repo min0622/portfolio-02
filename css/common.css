@@ -63,10 +63,12 @@ header {
     border-bottom: 1px solid #EFEFEF;
 
 }
+
 /* .fix{
     position: fixed;
    animation: drop .25s ease;
 } */
+
 @keyframes drop {
     0%{
         top: -1rem;
@@ -130,6 +132,7 @@ header {
 
 /* sub */
 .header_inner nav>ul>li>a.m_line::before{
+    /* js에서 클래스부여 */
     display: block;
     content: '';
     width: 100%;
@@ -147,15 +150,14 @@ header::after{
     content: '';
     width: 100%;
     height: 0;
-    /* border-top: 1px solid #EFEFEF; */
     position: absolute;
     top: 81px;
     left: 0;
     z-index: 996;
     transition: all .4s;
-    background-color: #fff;
+    /* background-color: #fff; */
 
-    /* background-color: rgba(0, 0, 0, .4); */
+    background-color: rgba(0, 0, 0, .4);
     
 }
 

@@ -1,4 +1,3 @@
-
 @import url(./common.css);
 
 
@@ -14,7 +13,11 @@ header {
     /* background-color: rgba(255,255,255,.2); */
     color: #000;
 }
-.header_inner nav>ul>li>a.m_line::before{
+header::after{
+    
+    background-color: #fff;
+}
+.header_inner nav>ul>li>a.m_line::before {
     background-color: var(--Mcolor--);
 
 }
@@ -120,7 +123,7 @@ main .video_box {
     width: 50%;
     padding-bottom: 28.13%;
 
-    
+
     /* position: relative; */
     position: absolute;
     top: 50%;
@@ -135,6 +138,7 @@ main .video_box {
 
 
 main .video_box video {
+    display: block;
     width: 100%;
     /* height: 100%; */
     position: absolute;
@@ -239,7 +243,8 @@ main .video_box p {
     padding: 0 20px;
 
 }
-.s_hidden{
+
+.s_hidden {
     display: none;
 }
 
@@ -339,7 +344,7 @@ main .video_box p {
 }
 
 .step_more {
-   
+
     width: 100%;
     height: 90px;
     position: relative;
@@ -410,34 +415,35 @@ main .video_box p {
 .t_box {
     background-image: url(../img/main/tip.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     padding: 134px 0;
     width: 100%;
+    /* height: 100%; */
     display: flex;
+    align-items: center;
     justify-content: end;
-  
 }
-.t_box_inner{
-    /* width: 90%; */
-    width: 86%;
-    overflow: hidden;
 
-}
+/* .t_box_inner{
+
+
+    
+}  */
 
 
 
 
 .tip {
-    width:100%;
-    /* max-width: 548px; */
-    /* height: 628px; */
+    /* width:100%; */
+    /* min-width: 548px; */
+    max-width: 548px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, .8);
     color: #fff;
     font-family: 'pre-l';
     font-size: 1.2rem;
     line-height: 150%;
-    margin: 0 20px;
+    /* margin: 0 10px; */
 }
 
 .tip a {
@@ -482,17 +488,18 @@ main .video_box p {
     display: block;
 }
 
-.btm_text p{
+.btm_text p {
     height: 72px;
     height: fit-content;
 }
+
 .btm_text .m-color {
     height: 58px;
     margin-top: 30px;
 }
 
 /* section_4 */
-#section_4{
+#section_4 {
     width: 100%;
     max-width: 1740px;
     padding: 90px 20px;
@@ -668,6 +675,9 @@ main .video_box p {
 }
 
 /* 반응형 */
+
+
+
 @media screen and (max-width:1600px) {
 
     /* main */
@@ -675,6 +685,7 @@ main .video_box p {
         height: 90vh;
 
     }
+
     main .flow_text_box {
         font-size: 120px;
     }
@@ -693,20 +704,17 @@ main .video_box p {
         width: 55%;
         padding-bottom: 30.94%;
         border-radius: 110px;
-    } 
-    /* section_2 */
-    #section_2 .step_box{
-        gap:16px;
     }
 
-    /* section_3 */
-    .tip {
-        margin: 0 40px;
+    /* section_2 */
+    #section_2 .step_box {
+        gap: 16px;
     }
-    .tip a{
-        height: 600px;
-    }
+
+
+
 }
+
 
 @media screen and (max-width:1200px) {
 
@@ -719,7 +727,7 @@ main .video_box p {
     }
 
     /* main */
-  
+
 
     main .flow_text_box {
         font-size: 100px;
@@ -737,10 +745,11 @@ main .video_box p {
     }
 
     /* section_1 */
-    
-    #section_1{
+
+    #section_1 {
         margin-top: 120px;
     }
+
     #section_1 .title {
         font-size: 2.8rem;
         margin-bottom: 44px;
@@ -771,6 +780,7 @@ main .video_box p {
         padding: 0 16px;
 
     }
+
     #section_2 .step_box .step,
     #section_2 .step_box .step_img img {
         height: 700px;
@@ -815,30 +825,28 @@ main .video_box p {
 
     .t_box {
         padding: 45px 0;
-    /* justify-content: center; */
+
 
     }
-    .t_box_inner{
-        width: 80%;
-    }
+
     .tip {
-        /* max-width: 428px; */
-        height: 490px;
+        /* min-width: 428px;*/
+        max-width: 428px; 
         border-radius: 20px;
         font-size: 1.1rem;
         line-height: 150%;
-        margin:0 30px;
     }
-   
-    .tip a{
+
+    .tip a {
         height: 490px;
         padding: 56px 47px;
     }
-    
 
-        .btm_text p{
-            height: 72px;
-        }
+
+    .btm_text p {
+        height: 72px;
+    }
+
     .t_title {
         font-size: 2rem;
         gap: 20px;
@@ -932,10 +940,12 @@ main .video_box p {
 }
 
 @media screen and (max-width:991px) {
+
     /* main */
     .main_inner {
         height: 84vh;
     }
+
     /* video */
     main .video_box p {
         font-size: 3rem;
@@ -947,25 +957,19 @@ main .video_box p {
         border-radius: 100px;
     }
 
-/* section_1 */
-#section_1 {
-    margin-top: 0;
-    padding: 45px 0;
+    /* section_1 */
+    #section_1 {
+        margin-top: 0;
+        padding: 45px 0;
 
-}
+    }
 
     /* section_2 */
     #section_2 .step_box .step-inner .text {
         padding: 0 17vw;
     }
 
-/* section_3 */
-.t_box_inner{
-    width: 100%;
-}
-.tip {
-    margin:0 20px;
-}
+
 
 
 }
@@ -991,10 +995,16 @@ main .video_box p {
         padding: 0 11vw;
     }
 
-/* section_3 */
+   /* section_3 */
+   .tip {
+    max-width: 382px;
+    /* font-size: 1.1rem;
+    line-height: 150%; */
+}
 
-.tip{
-    margin: 0 16px;
+.tip a {
+    height: 460px;
+    /* padding: 46px 38px; */
 }
 
     /* section_4 */
@@ -1033,14 +1043,12 @@ main .video_box p {
     #section_2 .step_box .step-inner .text {
         padding: 0 10vw;
     }
+
     .step_desc {
         text-align: left;
     }
 
-    /* section_3 */
-    .tip{
-        margin: 0 22px;
-    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -1073,27 +1081,30 @@ main .video_box p {
 
 
     /* section_1 */
-    
+
     #section_1 .title {
         font-size: 2.3rem;
         margin-bottom: 38px;
     }
 
     /* section_2 */
-    #section_2 .title{
+    #section_2 .title {
         font-size: 2rem;
     }
-    #section_2 .step_box{
+
+    #section_2 .step_box {
         gap: 10px;
     }
-    
+
     #section_2 .step_box .step-inner,
     #section_2 .step_box .step_img img {
         border-radius: 20px;
     }
+
     #section_2 .step_box .step-inner .text {
         padding: 0 8vw;
     }
+
     .step_info {
         font-size: 1.3rem;
     }
@@ -1112,14 +1123,12 @@ main .video_box p {
         font-size: 2rem;
     }
 
-
-
     .tip {
-        /* max-width: 382px; */
+        max-width: 382px;
         font-size: 1.1rem;
         line-height: 150%;
     }
-    
+
     .tip a {
         height: 436px;
         padding: 46px 38px;
@@ -1235,6 +1244,7 @@ main .video_box p {
         padding: 0 16px;
 
     }
+
     #section_2 .section_head {
         /* padding-top: 12vh; */
         margin-bottom: 25px;
@@ -1270,8 +1280,8 @@ main .video_box p {
     }
 
     /* section_3 */
-   
- 
+
+
 
 
     #section_3 .title {
@@ -1281,16 +1291,18 @@ main .video_box p {
     }
 
 
-  
+
     .tip {
-        /* max-width: 336px; */
+        /* min-width: 336px; */
+        max-width: 336px;
         font-size: 1rem;
         border-radius: 10px;
-        margin: 0 10px;
+        /* margin: 0 10px; */
     }
 
     .tip a {
-        height: 383px;
+        /* height: 383px; */
+        height: 360px;
         padding: 40px 30px;
     }
 
@@ -1396,6 +1408,3 @@ main .video_box p {
     }
 
 }
-
-
-
