@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
-    <script src="./script/jquery-3.7.1.min.js" defer></script>
+    <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous" defer></script>
     <script src="./script/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
@@ -21,6 +21,9 @@
 </head>
 
 <body>
+    <div id="cursor">
+        <div class="custom-cursor"></div>
+    </div>
     <!-- wrap -->
     <div id="wrap">
 
@@ -119,16 +122,13 @@
 
                 <div class="btn_box">
                     <button type="button" class="sch">
-                        <!-- <span class="h_hidden">검색</span> -->
                     </button>
                     <button type="button" class="login">
-                        <!-- <span class="h_hidden">로그인</span> -->
                     </button>
                     <button type="button" class="menu">
                         <span class="line line_1"></span>
                         <span class="line line_2"></span>
                         <span class="line line_3"></span>
-                        <!-- <span class="h_hidden">메뉴</span> -->
                     </button>
                 </div>
             </div>
@@ -147,7 +147,6 @@
                 <div class="side_inner">
                     <ul>
                         <li>
-                            <!-- <a href="./brand.html">브랜드 소개</a> -->
                             <a href="#">브랜드 소개</a>
                             <ul class="submenu_2">
                                 <li>
@@ -160,7 +159,6 @@
                         </li>
 
                         <li>
-                            <!-- <a href="./theme.html">여행준비</a> -->
                             <a href="#">여행준비</a>
                             <ul class="submenu_2">
                                 <li>
@@ -182,7 +180,6 @@
                         </li>
 
                         <li>
-                            <!-- <a href="./travel_tip.html">커뮤니티</a> -->
                             <a href="#">커뮤니티</a>
                             <ul class="submenu_2">
                                 <li>
@@ -770,204 +767,7 @@
 
     </div>
     <!-- //wrap -->
-    <!-- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script> -->
-
-    <!-- <script>
-
-        // main
-
-
-        // let mm = gsap.matchMedia();
-
-        // mm.add({
-        //     isDesktop: "(min-width: 768px)",
-        //     isMobile: "(max-width: 767px)"
-        // }, (context) => {
-            
-        //     const ani = gsap.timeline();
-        //     ani.to('main .video_box', { width: '90vw', height: '90vh', borderRadius: 0, duration: .5 })
-        //         .to('main .video_box', { scale: 1.2 })
-        //     ScrollTrigger.create({
-        //         animation: ani,
-        //         trigger: "main",
-        //         start: "2% top",
-        //         end: "+=800",
-        //         scrub: true,
-        //         pin: true,
-        //         markers: true,
-        //         anticipatePin: 1
-        //     });
-
-        // });    
-
-
-
-
-let mm = gsap.matchMedia();
-
-
-
-mm.add("(min-width: 768px)", () => {
-    
-   
-    const ani = gsap.timeline();
-    // ani.from('main .video_box',{width: '50%', position:'absolute', top:'50%', left:'50%', transfrom:'translate(-50%,-50%)' })
-    ani.from('main .video_box',{xPercent:-50})
-                ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
-                    .to('main .video_box', { scale: 1.2 })
-                ScrollTrigger.create({
-                    animation: ani,
-                    trigger: "main",
-                    start: "2% top",
-                    end: "+=800",
-                    scrub: true,
-                    pin: true,
-                    markers: true,
-                    anticipatePin: 1
-                });
-    
-                
-});
-
-mm.add("(max-width: 767px)", () => {
-    
-    const ani_mobile = gsap.timeline();
-    // ani_mobile.from('main .video_box',{width: '50%', position:'absolute', top:'50%', left:'50%', transfrom:'translate(-50%,-50%)' })
-    ani_mobile.from('main .video_box',{yPercent:-50})
-    ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100})
-                    .to('main .video_box', { scale: 1.2 })
-                ScrollTrigger.create({
-                    animation: ani_mobile,
-                    trigger: "main",
-                    start: "2% top",
-                    end: "+=100",
-                    scrub: true,
-                    pin: true,
-                    markers: true,
-                    anticipatePin: 1
-                });
-
-
-});
-
-        // const ani = gsap.timeline();
-        // ani.to('main .video_box', { width: '90vw', height: '90vh', borderRadius: 0, duration: .5 })
-        //     .to('main .video_box', { scale: 1.2 })
-        // ScrollTrigger.create({
-        //     animation: ani,
-        //     trigger: "main",
-        //     start: "2% top",
-        //     end: "+=800",
-        //     scrub: true,
-        //     pin: true,
-        //     markers: true,
-        //     anticipatePin: 1
-        // });
-
-
-
-
-
-        // section_2
-        const section_2 = document.querySelector("#section_2");
-        const horizontal = document.querySelector("#horizontal");
-        const sections = gsap.utils.toArray("#horizontal > section");
-
-        gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: section_2,
-                start: "top top",
-                // start: "-16% top",
-                end: () => "+=" + (horizontal.offsetWidth - innerWidth),
-                pin: true,
-                scrub: 1,
-                snap: {
-                    snapTo: 1 / (sections.length - 1),
-                    inertia: false,
-                    duration: { min: 0.1, max: 0.1 }
-                },
-                invalidateOnRefresh: true,
-                anticipatePin: 1,
-                markers: true
-            }
-        });
-
-
-
-        // header
-        // const showNav = gsap.from("header", {
-        //     yPercent: -200,
-        //     paused: true,
-        //     duration: 0.2
-        // }).progress(1);
-
-        // ScrollTrigger.create({
-        //     start: "top top",
-        //     end: 99999,
-        //     onUpdate: (self) => {
-        //         self.direction === -1 ? showNav.play() : showNav.reverse()
-        //     }
-        // });
-
-
-
-
-    </script> -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.5,  //초기값 설정 모바일값이 먼저!!
-            centeredSlides: true,
-            loop: true,
-            spaceBetween: 20,
-            // grabCursor: true,
-            pagination: {
-                // el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-
-                // 431:{
-                //     slidesPerView: 1.5, 
-                //     spaceBetween: 10,
-                // },
-                576: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 40,
-
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 100,
-
-                },
-                1400: {
-                    slidesPerView: 2,
-                    spaceBetween: 120,
-                    //   centeredSlides: true,
-                },
-                1600: {
-                    slidesPerView: 3,
-                    spaceBetween: 90,
-                    //   centeredSlides: true,
-                    loop: false
-                },
-            },
-        });
-    </script> -->
-
+     
 </body>
 
 </html>
