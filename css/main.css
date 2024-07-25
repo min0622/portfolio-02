@@ -1,4 +1,32 @@
 @import url(./common.css);
+body{
+    cursor: none; 
+
+}
+a{
+    cursor: none;
+}
+#cursor{
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5F9DF7;
+    position: absolute;
+    pointer-events: none; /* 커서가 아닌 다른 요소와의 상호작용 방지 */
+    transition: transform 0.2s ease;
+}
+.custom-cursor.expand {
+    transform: scale(2); /* 커서 확대 애니메이션 */
+    background-color: #5F9DF7;
+}
+
 
 
 #wrap {
@@ -10,12 +38,7 @@
 /* header */
 header {
     background-color: #fff;
-    /* background-color: rgba(255,255,255,.2); */
     color: #000;
-}
-header::after{
-    
-    background-color: #fff;
 }
 .header_inner nav>ul>li>a.m_line::before {
     background-color: var(--Mcolor--);
@@ -297,15 +320,20 @@ main .video_box p {
     height: 100%;
     border-radius: 40px;
     position: absolute;
-    background-color: rgba(0, 0, 0, .65);
+    /* background-color: rgba(0, 0, 0, .65); */
+    background-color: rgba(0, 0, 0, .4);
     color: #fff;
     z-index: 896;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .15s linear;
 }
-
+#section_2 .step_box .step-inner:hover{
+    background-color: rgba(0, 0, 0, .8);
+    
+}
 #section_2 .step_box .step_img {
     position: absolute;
 
@@ -431,14 +459,14 @@ main .video_box p {
     
     /* max-width: 548px; */
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: #000;
+    opacity: .8;
     color: #fff;
     font-family: 'pre-l';
     font-size: 1.2rem;
     line-height: 150%;
     display: block;
     padding: 80px 60px;
-    
 }
 
 .tip_box {
@@ -463,12 +491,66 @@ main .video_box p {
 .t_title .arrow {
     width: 32px;
     height: 32px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .t_title .arrow img {
+    width: 12px;
+    height: 12px;
+}
+/* before */
+.t_title .arrow::before,
+.c_arrow::before{
+    display: block;
+    content: '';
+    border-radius: 100%;
+    background-color: #fff;
+    
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: width .2s linear, height .2s linear ;
+}
+/* .t_title .arrow:hover::before{ */
+.t_title .arrow.b_on::before,
+.c_arrow.b_on::before{
     width: 100%;
     height: 100%;
+    transition: width .2s linear, height .2s linear ;
 }
+/* after */
+.t_title .arrow::after,
+.c_arrow::after{
+    display: block;
+    content: '';
+    border-radius: 100%;
+    background-color: #000;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: width .2s linear, height .2s linear ;
+}
+/* .t_title .arrow:hover::after{ */
+.t_title .arrow.b_on::after,
+.c_arrow.b_on::after{
+
+    width: 5px;
+    height: 5px;
+    transition: width .2s linear, height .2s linear ;
+}
+
+
 
 .m-color {
     color: var(--Mcolor--);
@@ -557,6 +639,17 @@ main .video_box p {
 .c_arrow {
     width: 32px;
     height: 32px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ 
+}
+.c_arrow img {
+    width: 12px;
+    height: 12px;
 }
 
 /* section_5 */
