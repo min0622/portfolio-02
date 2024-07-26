@@ -44,6 +44,7 @@ $(function () {
     }
   });
 
+  
   // header _스크롤
   $(function () {
     var prevScrollTop = 0;
@@ -66,7 +67,7 @@ $(function () {
 
 
   // main
-  $('.v_txt').stop(true).delay(600).fadeOut(600);
+  $('.v_txt').stop(true).delay(1000).fadeOut(800);
 
 
 
@@ -77,21 +78,8 @@ $(function () {
 
   $(window).scroll(function () {
 
-    // header_scrollfix
-    // if ($(window).scrollTop() > spot) {
-    //   $('header').addClass('fix');
-    //   // $('header').css({backgroundColor:'rgba(255,255,255,.3)', backdropFilter: 'blur(50px)'});
-    // } else {
-    //   $('header').removeClass('fix');
-    //   // $('header').css({backgroundColor:'#fff'});
-
-    // }
-
-
-
     // top_btn
     let top = $(window).scrollTop();
-    // console.log(top)
 
     if (top >= 1000) {
       $('.top_btn').stop(true).fadeIn();
@@ -114,7 +102,7 @@ $(function () {
 
 
 
-  // resize
+  // menu_resize
 
   $(window).resize(function () {
 
@@ -126,8 +114,6 @@ $(function () {
 
       if (size <= 575) {
         $('.side_bg').css({ backgroundColor: 'transparent' });
-
-        // $('.side_menu').stop(true).fadeIn();
 
       } else {
         $('.side_bg').stop(true).delay(200).fadeIn();
@@ -168,7 +154,7 @@ $(function () {
 
 
 
-  // gsap
+  // gsap_main
   let mm = gsap.matchMedia();
 
 
@@ -206,7 +192,7 @@ $(function () {
       end: "+=100",
       scrub: true,
       pin: true,
-      markers: true,
+      markers: false,
       anticipatePin: 1
     });
 
@@ -217,24 +203,7 @@ $(function () {
 
 
 
-
-  // section_2
-// $('.step-inner').on({
-
-//   mouseover:function(){
-//     $(this).stop(true).animate({backgroundColor:'rgba(0, 0, 0, .65)'})
-
-//   },
-//   mouseout:function(){
-//     $(this).stop(true).animate({backgroundColor:' rgba(0, 0, 0, .4)'})
-//   }
-
-// });
-
-
-
-
-
+  // gsap_section_2
 
   const section_2 = document.querySelector("#section_2");
   const horizontal = document.querySelector("#horizontal");
@@ -253,100 +222,132 @@ $(function () {
       snap: {
         snapTo: 1 / (sections.length - 1),
         inertia: false,
-        duration: { min: 0.1, max: 0.1 }
+        // duration: { min: 0.1, max: 0.1 }
+        duration: { min: 0.3, max: 0.3 }
       },
       invalidateOnRefresh: true,
       anticipatePin: 1,
-      markers: true
+      markers: false
     }
   });
 
 
-  
-
-// section_3,4 arrow
-$('.tip').on({
-mouseover:function(){
-  // $(this).css({opacity:'1'});
-  $(this).find('.arrow').addClass('b_on')
-},
-mouseout:function(){
-  // $(this).css({opacity:'.8'})
-  $(this).find('.arrow').removeClass('b_on')
-  
-}
-
-});
-
-
-$('.c_box').on({
-mouseover:function(){
-  $(this).find('.c_arrow').addClass('b_on')
-},
-mouseout:function(){
-  $(this).find('.c_arrow').removeClass('b_on')
-  
-}
-
-});
 
 
 
 
+  // section_3,4 arrow
+  $('.tip').on({
+    mouseover: function () {
+      // $(this).css({opacity:'1'});
+      $(this).find('.arrow').addClass('b_on')
+    },
+    mouseout: function () {
+      // $(this).css({opacity:'.8'})
+      $(this).find('.arrow').removeClass('b_on')
+
+    }
+
+  });
+
+
+  $('.c_box').on({
+    mouseover: function () {
+      $(this).find('.c_arrow').addClass('b_on')
+    },
+    mouseout: function () {
+      $(this).find('.c_arrow').removeClass('b_on')
+
+    }
+
+  });
 
 
 
-// swiper
+
+
+
+  // // swiper
+  // var swiper = new Swiper(".mySwiper", {
+  //   slidesPerView: 1.2,
+  //   spaceBetween: 20,
+  //   centeredSlides: true,
+  //   loop: true,
+
+  //   breakpoints: {
+
+  //     431: {
+  //       slidesPerView: 1.2,
+  //       spaceBetween: 30,
+  //     },
+  //     576: {
+  //       slidesPerView: 1.5,
+  //       spaceBetween: 50
+
+  //     },
+  //     768: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 40,
+
+  //     },
+  //     992: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 70,
+
+  //     },
+  //     1020: {
+  //       slidesPerView: 2.5,
+  //       spaceBetween: 50,
+
+  //     },
+  //     1400: {
+  //       slidesPerView: 2.5,
+  //       spaceBetween: 140,
+  //       loop: false
+
+  //     },
+  //     1600: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 90,
+  //       loop: false
+  //     }
+  //     // 1600 : {
+  //     //   slidesPerView: 3, 
+  //     //   spaceBetween: 90,
+  //     //   loop:false
+  //     // },
+  //   },
+  // });
+
+
+  // swiper
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.2,
+    slidesPerView: 'auto',
     spaceBetween: 20,
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
 
     breakpoints: {
-
-      431: {
-        slidesPerView: 1.2,
-        spaceBetween: 30,
-      },
       576: {
-        slidesPerView: 1.5,
-        spaceBetween: 50
-
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 70,
+        spaceBetween: 50,
+        centeredSlides: false,
 
       },
       1020: {
-        slidesPerView: 2.5,
-        spaceBetween: 50,
+        spaceBetween: 40,
+        centeredSlides: false,
 
       },
-      1400: {
-        slidesPerView: 2.5,
-        spaceBetween: 140,
-        loop: false
-
-      },
-      1600: {
-        slidesPerView: 3,
-        spaceBetween: 90,
+      1201: {
+        slidesPerView: 'auto',
+        spaceBetween: 60,
+        centeredSlides: true,
         loop: false
       }
-      // 1600 : {
-      //   slidesPerView: 3, 
-      //   spaceBetween: 90,
-      //   loop:false
-      // },
-    },
+
+    }
   });
+
 
 
 
@@ -360,14 +361,37 @@ mouseout:function(){
 // cursor
 document.addEventListener('DOMContentLoaded', () => {
 
-    const customCursor = document.querySelector('.custom-cursor');
+  const customCursor = document.querySelector('.custom-cursor');
+  const step = document.querySelectorAll('.step')
+  const circle = document.querySelector('.cursor_circle')
+  const arrow = document.querySelector('.cursor_arrow')
 
-  
-    document.addEventListener('mousemove', (e) => {
-        customCursor.style.left = `${e.clientX}px`;
-        customCursor.style.top = `${e.clientY}px`;
+  document.addEventListener('mousemove', (e) => {
+    customCursor.style.left = `${e.clientX}px`;
+    customCursor.style.top = `${e.clientY}px`;
+  });
+
+
+  step.forEach(stepList => {
+
+    stepList.addEventListener('mouseover', () => {
+
+      customCursor.classList.add('expand');
+      circle.style.opacity = '1'
+      arrow.style.opacity = '1'
+
+    });
+    stepList.addEventListener('mouseout', () => {
+
+      customCursor.classList.remove('expand');
+      circle.style.opacity = '0'
+      arrow.style.opacity = '0'
     });
 
 
-    console.log(customCursor)
+
+  });
+
+
+
 });
