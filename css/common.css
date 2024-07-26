@@ -460,14 +460,9 @@ footer .btm_box {
 
 /* footer > top_btn */
 footer .top_btn {
-     position: fixed;
-    z-index: 897;
-    right:2% ;
-    bottom: 0;
-    transform: translateX(-50%);
-
+     position: relative;
     display: none;
-    
+
     /* width: 100%;
     max-width: 1740px;
     padding: 104px 20px;
@@ -491,10 +486,12 @@ footer .top_btn {
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 20px;
-    bottom: 104px;
     z-index: 898;
-
+    /* right: 20px;
+    bottom: 104px; */
+    
+    right: 4%;
+    bottom: 12%;
 }
 
 
