@@ -2,7 +2,11 @@
 
 
 
-
+.pin-spacer{
+    padding-bottom:0 ;
+    height: 1200px;
+}
+  
 
 /* wrap */
 #wrap {
@@ -20,7 +24,6 @@ header {
 header::after {
     border-top: 1px solid #EFEFEF;
     background-color: #fff;
-
 }
 
 .submenu>li {
@@ -138,6 +141,7 @@ main .video_box {
 
     border-radius: 120px;
     overflow: hidden;
+    
 
 }
 
@@ -871,7 +875,10 @@ main .video_box p {
 
     /* main */
 
+    .main_inner {
+        height: 60vh;
 
+    }
     main .flow_text_box {
         font-size: 100px;
     }
@@ -984,8 +991,6 @@ main .video_box p {
         padding: 56px 47px;
     }
 
-  
-
     .btm_text p {
         height: 72px;
     }
@@ -1085,9 +1090,9 @@ main .video_box p {
 @media screen and (max-width:991px) {
 
     /* main */
-    .main_inner {
+    /* .main_inner {
         height: 84vh;
-    }
+    } */
 
     /* video */
     main .video_box p {
@@ -1102,7 +1107,7 @@ main .video_box p {
 
     /* section_1 */
     #section_1 {
-        margin-top: 0;
+        margin-top: 100px;
         padding: 45px 0;
 
     }
@@ -1119,6 +1124,10 @@ main .video_box p {
 
 @media screen and (max-width:767px) {
 
+    .main_inner {
+        height: 65vh;
+
+    }
 
     /* video */
     main .video_box {
@@ -1190,9 +1199,7 @@ main .video_box p {
 @media screen and (max-width:575px) {
 
     /* main */
-    .main_inner {
-        height: 64vh;
-    }
+  
 
     main .flow_text_box {
         font-size: 68px;
@@ -1319,8 +1326,7 @@ main .video_box p {
 
     /* main */
     .main_inner {
-        height: 60vh;
-        height: 56vh;
+        height: 54vh;
     }
 
     main .flow_text_box {
