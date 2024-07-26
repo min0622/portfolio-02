@@ -158,11 +158,12 @@ $(function () {
   let mm = gsap.matchMedia();
 
 
-  mm.add("(min-width: 768px)", () => {
+  mm.add("(min-width: 769px)", () => {
 
 
     const ani = gsap.timeline();
-    ani.from('main .video_box', { xPercent: -50 })
+    // ani.from('main .video_box', { xPercent: -50 })
+    ani.from('main .video_box', { x:'0' })
     ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
       .to('main .video_box', { scale: 1.2 })
     ScrollTrigger.create({
@@ -172,17 +173,20 @@ $(function () {
       end: "+=800",
       scrub: true,
       pin: true,
-      markers: true,
-      anticipatePin: 1
+      markers: false,
+      anticipatePin: 1,
+
+
     });
 
 
   });
 
-  mm.add("(max-width: 767px)", () => {
+  mm.add("(max-width: 768px)", () => {
 
     const ani_mobile = gsap.timeline();
-    ani_mobile.from('main .video_box', { yPercent: -50 })
+    // ani_mobile.from('main .video_box', { yPercent: -50 })
+    ani_mobile.from('main .video_box', { y:'0'})
     ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 })
       .to('main .video_box', { scale: 1.2 })
     ScrollTrigger.create({
@@ -194,6 +198,10 @@ $(function () {
       pin: true,
       markers: false,
       anticipatePin: 1
+
+
+
+      
     });
 
 
