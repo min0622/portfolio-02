@@ -1,5 +1,9 @@
 @import url(./common.css);
-
+#wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 #contents_wrap {
     width: 100%;
     overflow: hidden;
@@ -8,7 +12,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 280px;
+
     padding-bottom: 176px;
     position: relative;
 }
@@ -108,8 +113,6 @@ h3 {
 .name_box {
     max-width: 1660px;
     width: 100%;
-    /* background-color: beige; */
-    
     display: flex;
     gap: 7.2%;
     align-items: end;
@@ -125,6 +128,7 @@ h3 {
     justify-content: end;
     margin-bottom: 150px;
 }
+
 .name_v_img,
 .name_e_img {
     width: 67.7%;
@@ -146,7 +150,6 @@ h3 {
 }
 
 .desc p {
-    /* width: 360px; */
     width: fit-content;
     font-family: 'pre-r';
     font-size: 1.3rem;
@@ -166,17 +169,14 @@ h3 {
     margin: auto;
     position: relative;
     text-align: center;
-    /* background-color: beige; */
 }
 
 .name_border {
     font-family: "Outfit", sans-serif;
     font-size: 188px;
-    /* font-size: 10vw; */
     font-weight: 500;
     color: #fff;
     opacity: .2;
-    /* text-shadow: 1.5px 1.5px var(--Scolor--), -1.5px -1.5px var(--Scolor--),  -1.5px 1.5px var(--Scolor--),  1.5px -1.5px var(--Scolor--); */
     text-shadow: 1px 1px 0 var(--Scolor--), -1px -1px 0 var(--Scolor--), 1px -1px 0 var(--Scolor--), -1px 1px 0 var(--Scolor--), 1px 1px 0 var(--Scolor--);
     width: 100%;
 }
@@ -202,17 +202,14 @@ h3 {
 .name_in p:first-of-type {
     margin-top: 24px;
     margin-bottom: 30px;
-    /* padding: 0 115px; */
 }
 
 .name_in p:last-of-type>span {
     display: block;
-    /* padding: 0 180px; */
 
 }
 
 /* section_3 */
-
 #b_slogan {
     width: 100%;
     height: 600px;
@@ -277,7 +274,6 @@ h3 {
 .slogan_txt h5 {
     font-family: 'pre-m';
     font-size: 1.4rem;
-    /* margin-bottom: 71px; */
     margin-bottom: 8%;
     line-height: 120%;
 
@@ -288,69 +284,10 @@ h3 {
     font-size: 1.3rem;
     line-height: 170%;
 }
-.slogan_txt p>span{
+
+.slogan_txt p>span {
     display: block;
 }
-
-/* 복사본 */
-/* #b_slogan{
-    width: 100%;
-    position: relative;
-    margin-top: 250px;
-    overflow: hidden;
-}
-#b_slogan .bg{
-width: 100%;
-height: 600px;
-position: absolute;
-z-index: -1;
-
-}
-
-.slogan_inner{
-    max-width: 1740px;
-    padding: 0 20px;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    color: #fff;
-
-    
-}
-.slogan_inner h3{
-    font-family: "Outfit", sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
-    color: #fff;
-}
-.slogan_txt{
-    width: 788px;
-    text-align: right;
-}
-.slogan_txt h4{
-    font-family: "Outfit", sans-serif;
-    font-size:2.7rem ;
-    font-weight:400 ;
-    margin-bottom: 10px;
-    line-height: 120%;
-
-}
-.slogan_txt h5{
-    font-family: 'pre-m';
-    font-size: 1.4rem;
-    margin-bottom: 71px;
-    margin-bottom: 8%;
-    line-height: 120%;
-
-}
-.slogan_txt p{
-    font-family:'pre-r' ;
-    font-size: 1.3rem ;
-    line-height: 170%;
-} */
 
 
 
@@ -362,28 +299,29 @@ footer {
 /* 반응형 */
 @media screen and (max-width:1540px) {
 
-/* section_1 */
-    #b_story{
+    /* section_1 */
+    #b_story {
         padding-bottom: 50rem;
 
     }
 
 
-    .name_v{
+    .name_v {
         gap: 7.6%;
     }
-    .name_e{
+
+    .name_e {
         justify-content: space-between;
         gap: 0;
     }
-   
+
 }
 
 @media screen and (max-width:1200px) {
 
     /* contents_wrap */
     #contents_wrap {
-        padding-top: 160px;
+        padding-top: 240px;
         padding-bottom: 120px;
     }
 
@@ -479,41 +417,43 @@ footer {
     .name_e {
         margin-bottom: 100px;
     }
-    
-/* section_3 */
-#b_slogan {
-    height: 500px;
-    margin-top: 200px;
-}
 
-.slogan_inner{
-    flex-direction: column;
-    justify-content: center;
-}
-.slogan_inner h3 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-}
+    /* section_3 */
+    #b_slogan {
+        height: 500px;
+        margin-top: 200px;
+    }
 
-.slogan_txt {
-    width: fit-content;
+    .slogan_inner {
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    text-align: center;
-}
+    .slogan_inner h3 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
 
-.slogan_txt h4 {
-    font-size: 2rem;
-}
-.slogan_txt h5 {
-    font-size: 1.3rem;
-    margin-bottom: 4%;
-    margin-bottom: 26px;
-}
+    .slogan_txt {
+        width: fit-content;
 
-.slogan_txt p {
-    font-size: 1.1rem;
-    line-height: 150%;
-}
+        text-align: center;
+    }
+
+    .slogan_txt h4 {
+        font-size: 2rem;
+    }
+
+    .slogan_txt h5 {
+        font-size: 1.3rem;
+        margin-bottom: 4%;
+        margin-bottom: 26px;
+    }
+
+    .slogan_txt p {
+        font-size: 1.1rem;
+        line-height: 150%;
+    }
 
 }
 
@@ -569,10 +509,12 @@ footer {
         width: 100%;
         padding: 0 10%;
     }
+
     .name_in p:last-of-type>span {
         display: inline;
 
     }
+
     /* scetion_3 */
     #b_slogan {
         margin-top: 220px;
@@ -581,16 +523,6 @@ footer {
 
 
 @media screen and (max-width:767px) {
-
-    /*contents_wrap  */
-    #contents_wrap {
-        padding-top: 140px;
-        padding-bottom: 100px;
-    }
-
-    #contents_wrap .contents_head {
-        font-size: 2.5rem;
-    }
 
     /* section_1 */
     .story_border {
@@ -616,12 +548,13 @@ footer {
     }
 
     .name_in {
-        /* width: 100%; */
         padding: 0 7%;
     }
+
     .name_v {
         margin-bottom: 120px;
     }
+
     .name_e {
         margin-bottom: 140px;
     }
@@ -629,29 +562,30 @@ footer {
     /* section_3 */
     #b_slogan {
         height: 460px;
-        /* margin-top: 120px; */
-    
     }
+
     .slogan_inner {
         padding: 0 11%;
     }
+
     .slogan_inner h3 {
         font-size: 2rem;
         margin-bottom: 15px
     }
-    
+
     .slogan_txt h4 {
         font-size: 1.3rem;
         margin-bottom: 5px;
         line-height: 130%;
-    
+
     }
+
     .slogan_txt h5 {
         font-size: 1.1rem;
         margin-bottom: 15px;
-    
+
     }
-    
+
     .slogan_txt p {
         font-size: 1rem;
     }
@@ -684,7 +618,6 @@ footer {
     }
 
     .desc p {
-        /* width: 300px; */
         font-size: 1.1rem;
         margin-top: 15px;
     }
@@ -717,7 +650,7 @@ footer {
 
     /* contents_wrap */
     #contents_wrap {
-        padding-top: 100px;
+        padding-top: 160px;
         padding-bottom: 80px;
 
     }
@@ -755,13 +688,9 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* h3{
-    font-size: 2rem;
-} */
 
     /* section_2 */
     #b_name {
-        /* margin-top: 150px; */
         margin-top: 200px;
     }
 
@@ -780,7 +709,6 @@ footer {
     }
 
     .desc p {
-        /* width: 240px; */
         font-size: 0.9rem;
         margin-top: 15px;
     }
@@ -814,7 +742,6 @@ footer {
         padding: 0 11%;
         width: 100%;
         font-size: 0.9rem;
-        /* line-height: 140%; */
 
     }
 
@@ -829,20 +756,19 @@ footer {
     }
 
     /* section_3 */
-#b_slogan {
-    height: 420px;
-    margin-top: 90px;
+    #b_slogan {
+        height: 420px;
+        margin-top: 90px;
 
-}
+    }
 
 
-.slogan_txt h5 {
-    font-size: 1rem;
-    /* margin-bottom: 15px; */
-}
+    .slogan_txt h5 {
+        font-size: 1rem;
+    }
 
-.slogan_txt p {
-    font-size: 14px;
-}
+    .slogan_txt p {
+        font-size: 14px;
+    }
 
 }

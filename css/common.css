@@ -49,8 +49,6 @@
 899  998   991 990  897 898 999  896
 */
 
-
-
 header {
     width: 100%;
     /* overflow: hidden; */
@@ -60,24 +58,25 @@ header {
     top: 0;
     left: 0;
     z-index: 899;
-    border-bottom: 1px solid #EFEFEF;
-    
-    transition:all 0.2s linear 0s;
+    z-index: 10;
+    transition: all 0.2s linear 0s;
 }
 
-header.active{
+header.active {
     transform: translateY(-100%);
-    transition:all 0.15s linear 0s;
- }
+    transition: all 0.15s linear 0s;
+}
 
 @keyframes drop {
-    0%{
+    0% {
         top: -1rem;
     }
-    100%{
+
+    100% {
         top: 0;
     }
 }
+
 .header_inner {
     width: 100%;
     max-width: 1740px;
@@ -115,9 +114,10 @@ header.active{
 }
 
 .header_inner nav>ul>li {
-    width:156px;
+    width: 156px;
     position: relative;
 }
+
 .header_inner nav>ul>li>a {
     font-family: 'pre-semi';
     font-size: 18px;
@@ -129,83 +129,88 @@ header.active{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
 }
 
 /* sub */
-.header_inner nav>ul>li>a.m_line::before{
-    /* js에서 클래스부여 */
+/* 메뉴 언더라인 */
+.header_inner nav>ul>li>a::before {
     display: block;
     content: '';
-    width: 100%;
     height: 3px;
     background-color: #fff;
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: 0;
     z-index: 997;
-
-    transition: width .5s linear;
+    width: 0;
+    transition: width .5s ease, left .5s ease;
+    transform: translateX(-50%);
 }
 
+.header_inner nav>ul>li>a.m_line::before {
+    width: 80%;
+}
 
-header::after{
+header::after {
     display: block;
     content: '';
     width: 100%;
     height: 0;
     position: absolute;
-    top: 81px;
+    top: 80px;
     left: 0;
     z-index: 996;
-    transition: all .4s;
-    /* background-color: #fff; */
+    transition: all .4s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, .6);
 
-    background-color: #f7f7f7;
-    
+    border-top: 1px solid #EFEFEF;
+
 }
 
 
-header.on::after{
+header.on::after {
     height: 300px;
 }
 
 .header_inner nav .submenu {
-    font-family: 'pre-r';
+    font-family: 'pre-m';
     font-size: 16px;
     text-align: center;
     padding: 30px 0;
     width: 100%;
-    /* background-color: salmon; */
     position: relative;
-  left: 0; 
-  top: 8px;
+    left: 0;
+    top: 8px;
     z-index: 998;
     display: none;
-    
-    
+
+
 }
-.submenu>li{
+
+.submenu>li {
     width: 100%;
-    padding: 1rem .5rem ;
+    padding: 1rem .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-    color: #000;
-    
+    /* color: #000; */
+    color: #fff;
 }
-.submenu>li:hover{
+
+.submenu>li:hover {
     color: var(--Mcolor--);
     font-weight: 600;
     /* color: #fff; */
 }
+
 .header_inner nav .submenu>li>a {
     display: block;
     width: 140px;
     height: 100%;
-    
+
 }
 
 
@@ -244,8 +249,8 @@ button {
 
 .btn_box .menu {
     display: none;
-    }
- 
+}
+
 
 
 /* side_menu */
@@ -264,47 +269,44 @@ button {
 }
 
 
-.close_box{
+.close_box {
     width: 100%;
     height: 80px;
-    /* background-color: beige; */
 }
-.close{
-    /* width: 24px;
-    height: 24px; */
+
+.close {
     width: 80px;
     height: 80px;
-    
-    /* background-color: steelblue; */
-    /* padding: 3px 0; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
+
 .close>span {
     display: block;
     height: 2px;
     border-radius: 10px;
     background-color: #000;
-    
+
 }
-.close .line_1{
+
+.close .line_1 {
     width: 32px;
     transform: translateX(50%) rotate(45deg);
 }
+
 .close .line_2 {
     width: 32px;
-    transform:translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%) rotate(-45deg);
 }
 
 .side_inner {
     width: 100%;
     height: 100%;
-    /* padding: 10vh 0;*/
-    padding-bottom: 30vh;  
+    padding-bottom: 30vh;
     padding-top: 40px;
     overflow: hidden;
     overflow-y: auto;
@@ -338,15 +340,13 @@ button {
     color: #fff;
     padding: 6px;
 
-    
+
     display: none;
 }
 
 .side_inner .submenu_2>li {
     width: 100%;
     border-radius: 10px;
-    /* padding: 8px 0;
-    padding: 2px 0; */
 }
 
 .side_inner .submenu_2>li>a {
@@ -371,10 +371,10 @@ button {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
-  left: 0;
+    left: 0;
     z-index: 990;
 
     display: none;
@@ -401,7 +401,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: start; */
 }
 
 .g_logo {
@@ -457,7 +456,6 @@ footer .btm_box {
     align-items: center;
     background-color: rgba(255, 255, 255, .15);
     font-size: 1.5rem;
-    /* color: #999; */
 }
 
 /* footer > top_btn */
@@ -486,7 +484,7 @@ footer .top_btn {
     right: 20px;
     bottom: 104px;
     z-index: 898;
-    
+
 }
 
 
@@ -515,7 +513,7 @@ footer .top_btn {
         height: 34px;
     }
 
-    .header_inner nav {
+    .header_inner nav,header::after  {
         display: none;
     }
 
@@ -529,7 +527,6 @@ footer .top_btn {
         flex-direction: column;
         justify-content: space-between;
         align-items: end;
-        /* z-index: 999; */
         position: relative;
     }
 
@@ -547,13 +544,9 @@ footer .top_btn {
 
     .menu .line_2 {
         width: 50%;
-    } 
-
-   
+    }
 
 
-
-    
 
     /* footer */
     footer {
@@ -603,13 +596,20 @@ footer .top_btn {
 }
 
 @media screen and (max-width:575px) {
-/* side_menu */
-.side_menu {
-    width: 100%;
+
+    .btn_box .sch,
+    .btn_box .login {
+        display: none;
+    }
+    /* side_menu */
+    .side_menu {
+        width: 100%;
+    }
 }
-}
+
 @media screen and (max-width:430px) {
-/* header */
+
+    /* header */
     .header_inner {
         height: 60px;
     }
@@ -619,10 +619,6 @@ footer .top_btn {
         height: 20px;
     }
 
-    .btn_box .sch,
-    .btn_box .login {
-        display: none;
-    }
 
 
 
@@ -656,6 +652,3 @@ footer .top_btn {
 
 }
 
-/* @media screen and (max-height:430px) {
-    
-} */

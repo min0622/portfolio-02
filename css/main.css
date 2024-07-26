@@ -1,34 +1,10 @@
 @import url(./common.css);
-body{
-    cursor: none; 
-
-}
-a{
-    cursor: none;
-}
-#cursor{
-    position: fixed;
-    z-index: 99999;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-.custom-cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #5F9DF7;
-    position: absolute;
-    pointer-events: none; /* 커서가 아닌 다른 요소와의 상호작용 방지 */
-    transition: transform 0.2s ease;
-}
-.custom-cursor.expand {
-    transform: scale(2); /* 커서 확대 애니메이션 */
-    background-color: #5F9DF7;
-}
 
 
 
+
+
+/* wrap */
 #wrap {
     width: 100%;
     overflow: hidden;
@@ -40,9 +16,19 @@ header {
     background-color: #fff;
     color: #000;
 }
-.header_inner nav>ul>li>a.m_line::before {
-    background-color: var(--Mcolor--);
 
+header::after {
+    border-top: 1px solid #EFEFEF;
+    background-color: #fff;
+
+}
+
+.submenu>li {
+    color: #000;
+}
+
+.header_inner nav>ul>li>a::before {
+    background-color: var(--Mcolor--);
 }
 
 .btn_box .sch {
@@ -65,7 +51,6 @@ main {
 .main_inner {
     width: 100%;
     height: 100vh;
-    /* padding: calc(50vh - 300px) 0; */
     position: relative;
 
 }
@@ -145,9 +130,6 @@ main .flow_text_box .bold {
 main .video_box {
     width: 50%;
     padding-bottom: 28.13%;
-
-
-    /* position: relative; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -199,7 +181,8 @@ main .video_box p {
 }
 
 #section_1 .title {
-    margin-bottom: 58px;
+    margin-bottom: 80px;
+
     font-family: 'pre-b';
     font-size: 3.7rem;
     line-height: 130%;
@@ -218,7 +201,7 @@ main .video_box p {
     width: 4184px;
     height: 100%;
     display: flex;
-    animation: flow_i 20s linear infinite;
+    animation: flow_i 25s linear infinite;
 }
 
 @keyframes flow_i {
@@ -285,8 +268,6 @@ main .video_box p {
 
 
 #section_2 .step_box {
-    width: 400%;
-    width: 420%;
     width: 460%;
     display: flex;
     /* overflow: hidden; */
@@ -320,8 +301,7 @@ main .video_box p {
     height: 100%;
     border-radius: 40px;
     position: absolute;
-    /* background-color: rgba(0, 0, 0, .65); */
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .65);
     color: #fff;
     z-index: 896;
     display: flex;
@@ -330,10 +310,7 @@ main .video_box p {
     align-items: center;
     transition: all .15s linear;
 }
-#section_2 .step_box .step-inner:hover{
-    background-color: rgba(0, 0, 0, .8);
-    
-}
+
 #section_2 .step_box .step_img {
     position: absolute;
 
@@ -417,7 +394,6 @@ main .video_box p {
     width: 100%;
     overflow: hidden;
     position: relative;
-    /* z-index: 888; */
     margin-top: 15rem;
     padding: 85px 0;
     background-color: #fff;
@@ -432,7 +408,6 @@ main .video_box p {
     font-family: 'pre-r';
     font-size: 3.5rem;
     margin-bottom: 46px;
-    /* line-height: 150%; */
 }
 
 #section_3 .title>span {
@@ -442,7 +417,6 @@ main .video_box p {
 .t_box {
     background-image: url(../img/main/tip.png);
     background-repeat: no-repeat;
-    /* background-size: cover; */
     padding: 134px 0;
     width: 100%;
     /* height: 100%; */
@@ -451,13 +425,12 @@ main .video_box p {
     justify-content: end;
 }
 
-
-
-
+.swiper{
+    width: 100%;
+    overflow: visible;
+}
 
 .tip {
-    
-    /* max-width: 548px; */
     border-radius: 20px;
     background-color: #000;
     opacity: .8;
@@ -465,13 +438,19 @@ main .video_box p {
     font-family: 'pre-l';
     font-size: 1.2rem;
     line-height: 150%;
-    display: block;
     padding: 80px 60px;
+    
+    width: 548px;
+    height: 628px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tip_box {
+    display: block;
     width: 100%;
-    height: 468px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -503,32 +482,34 @@ main .video_box p {
     width: 12px;
     height: 12px;
 }
+
 /* before */
 .t_title .arrow::before,
-.c_arrow::before{
+.c_arrow::before {
     display: block;
     content: '';
     border-radius: 100%;
     background-color: #fff;
-    
+
     width: 0;
     height: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    transition: width .2s linear, height .2s linear ;
+    transform: translate(-50%, -50%);
+    transition: width .2s linear, height .2s linear;
 }
-/* .t_title .arrow:hover::before{ */
+
 .t_title .arrow.b_on::before,
-.c_arrow.b_on::before{
+.c_arrow.b_on::before {
     width: 100%;
     height: 100%;
-    transition: width .2s linear, height .2s linear ;
+    transition: width .2s linear, height .2s linear;
 }
+
 /* after */
 .t_title .arrow::after,
-.c_arrow::after{
+.c_arrow::after {
     display: block;
     content: '';
     border-radius: 100%;
@@ -538,16 +519,16 @@ main .video_box p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    transition: width .2s linear, height .2s linear ;
+    transform: translate(-50%, -50%);
+    transition: width .2s linear, height .2s linear;
 }
-/* .t_title .arrow:hover::after{ */
+
 .t_title .arrow.b_on::after,
-.c_arrow.b_on::after{
+.c_arrow.b_on::after {
 
     width: 5px;
     height: 5px;
-    transition: width .2s linear, height .2s linear ;
+    transition: width .2s linear, height .2s linear;
 }
 
 
@@ -563,7 +544,7 @@ main .video_box p {
 }
 
 .btm_text .m-color {
-    height: 58px;
+    /* height: 58px; */
     margin-top: 30px;
 }
 
@@ -645,8 +626,9 @@ main .video_box p {
     justify-content: center;
     align-items: center;
     position: relative;
- 
+
 }
+
 .c_arrow img {
     width: 12px;
     height: 12px;
@@ -757,6 +739,83 @@ main .video_box p {
 /* 반응형 */
 
 
+@media screen and (min-width:1200px) {
+
+
+    /* cursor */
+    body {
+        cursor: none;
+
+    }
+
+    a {
+        cursor: none;
+    }
+
+    /* pointer-events: none; 커서가 아닌 다른 요소와의 상호작용 방지  */
+    #cursor {
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+
+    .custom-cursor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #5F9DF7;
+        pointer-events: none;
+        position: absolute;
+        transform-origin: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: width .2s ease, height .2s ease;
+    }
+
+    .custom-cursor.expand {
+        width: 126px;
+        height: 126px;
+        background-color: #5F9DF7;
+    }
+
+
+
+    .cursor_circle {
+        position: absolute;
+        animation: rotate 4s linear infinite;
+
+        opacity: 0;
+        transition: opacity .05s ease;
+    }
+
+    .cursor_arrow {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        opacity: 0;
+        transition: opacity .2s ease;
+    }
+
+    .custom-cursor img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #section_2 .step_box .step-inner {
+        background-color: rgba(0, 0, 0, .5);
+
+    }
+
+    #section_2 .step_box .step-inner:hover {
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+}
+
 
 @media screen and (max-width:1600px) {
 
@@ -799,6 +858,10 @@ main .video_box p {
 @media screen and (max-width:1200px) {
 
     /* header */
+    header {
+        border-bottom: 1px solid #EFEFEF;
+    }
+
     .menu>span {
         display: block;
         background-color: #000;
@@ -907,20 +970,21 @@ main .video_box p {
         padding: 45px 0;
 
     }
-
+    .swiper{
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 40px;
+    }
     .tip {
-        /* min-width: 428px;*/
-        /* max-width: 428px;  */
+        width: 428px;
+        height: 490px;
         border-radius: 20px;
         font-size: 1.1rem;
         line-height: 150%;
         padding: 56px 47px;
     }
 
-    .tip_box  {
-        height: 378px;
-    }
-
+  
 
     .btm_text p {
         height: 72px;
@@ -1063,28 +1127,21 @@ main .video_box p {
 
     }
 
-    /* section_2 */
 
+    /* section_2 */
     #section_2 .section_head {
         padding-top: 12vh;
-        /* margin-bottom: 25px; */
     }
 
     #section_2 .step_box .step-inner .text {
         padding: 0 11vw;
     }
 
-   /* section_3 */
-   .tip {
-    /* max-width: 382px; */
-    /* font-size: 1.1rem;
-    line-height: 150%; */
-    padding: 46px 38px;
-}
-
-.tip_box{
-    height: 460px;
-}
+    /* section_3 */
+    /* .tip {
+        padding: 46px 38px;
+        height: 460px;
+    } */
 
     /* section_4 */
     .c_title {
@@ -1134,7 +1191,6 @@ main .video_box p {
 
     /* main */
     .main_inner {
-        /* height: 76vh; */
         height: 64vh;
     }
 
@@ -1160,7 +1216,6 @@ main .video_box p {
 
 
     /* section_1 */
-
     #section_1 .title {
         font-size: 2.3rem;
         margin-bottom: 38px;
@@ -1203,15 +1258,13 @@ main .video_box p {
     }
 
     .tip {
-        /* max-width: 382px; */
         font-size: 1.1rem;
         line-height: 150%;
+        /* width: 300px;
         padding: 46px 38px;
+        height: 344px; */
     }
 
-    .tip_box {
-        height: 344px;
-    }
 
     .t_title {
         font-size: 1.8rem;
@@ -1251,7 +1304,6 @@ main .video_box p {
 
     #section_5 .title {
         width: 100%;
-        /* font-size: 2.7rem; */
         float: left;
         margin-bottom: 16px;
     }
@@ -1325,7 +1377,6 @@ main .video_box p {
     }
 
     #section_2 .section_head {
-        /* padding-top: 12vh; */
         margin-bottom: 25px;
     }
 
@@ -1358,30 +1409,23 @@ main .video_box p {
         font-size: 1rem;
     }
 
+
     /* section_3 */
-
-
-
-
     #section_3 .title {
         font-size: 1.7rem;
         margin-bottom: 26px;
 
     }
 
-
-
     .tip {
-        /* min-width: 336px; */
-        /* max-width: 336px; */
         font-size: 1rem;
         border-radius: 10px;
         padding: 40px 30px;
-        /* margin: 0 10px; */
+        width: 336px;
+        height: 383px;
     }
-    .tip_box {
-        height: 280px;
-    }
+
+ 
 
     .t_title {
         font-size: 1.5rem;
@@ -1391,6 +1435,7 @@ main .video_box p {
         width: 24px;
         height: 24px;
     }
+
 
     /* section_4 */
     #section_4 {
@@ -1405,15 +1450,12 @@ main .video_box p {
     #section_4 .title {
         width: 100%;
         text-align: left;
-        /* font-size: 1.5rem; */
-        /* line-height: 160%; */
         font-size: 1.6rem;
         line-height: 150%;
         margin-bottom: 16px;
     }
 
     #section_4 .title span {
-        /* font-size: 2rem; */
         font-size: 2.2rem;
         display: block;
     }
