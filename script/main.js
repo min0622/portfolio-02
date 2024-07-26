@@ -76,16 +76,17 @@ $(function () {
   // scroll
   let spot = $('#section_1').offset().top;
 
+
   $(window).scroll(function () {
 
     // top_btn
     let top = $(window).scrollTop();
 
-    if (top >= 1000) {
-      $('.top_btn').stop(true).fadeIn();
+    if (top >= 1200) {
+      $('.top_btn').stop(true).fadeIn(300);
     } else {
 
-      $('.top_btn').stop(true).fadeOut();
+      $('.top_btn').stop(true).fadeOut(300);
     }
 
 
@@ -94,6 +95,9 @@ $(function () {
       $(window).scrollTop(0);
 
     });
+
+
+
 
 
 
