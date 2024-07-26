@@ -7,126 +7,228 @@
     <title>테마별 여행지</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/theme.css" type="text/css">
-    <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous" defer></script>
+    <script src="./script/theme.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
 </head>
 
 <body>
-
+   
     <!-- wrap -->
     <div id="wrap">
 
-      <!-- header -->
-      <header>
+        <!-- header -->
+        <header>
 
-        <div class="header_inner">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./img/w_logo.png" alt="logo">
-                    <span class="h_hidden">비아유로</span>
-                </a>
-            </h1>
+            <div class="header_inner">
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./brand.html">브랜드 소개</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="./brand.html">브랜드 스토리</a>
-                            </li>
-                            <li>
-                                <a href="#">BI</a>
-                            </li>
-                        </ul>
-                    </li>
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./img/w_logo.png" alt="logo">
+                        <span class="h_hidden">비아유로</span>
+                    </a>
+                </h1>
 
-                    <li>
-                        <a href="./theme.html">여행준비</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="./theme.html">테마별 여행지</a>
-                            </li>
-                            <li>
-                                <a href="#">숙소</a>
-                            </li>
-                            <li>
-                                <a href="#">교통</a>
-                            </li>
-                            <li>
-                                <a href="#">투어 & 티켓</a>
-                            </li>
-                            <li>
-                                <a href="#">맛집</a>
-                            </li>
-                        </ul>
-                    </li>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./brand.html" class="m">브랜드 소개</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./brand.html">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">BI</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="./travel_tip.html">커뮤니티</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="./travel_tip.html">여행 팁 공유</a>
-                            </li>
-                            <li>
-                                <a href="#">여행 후기</a>
-                            </li>
-                            <li>
-                                <a href="#">소통방</a>
-                            </li>
-                            <li>
-                                <a href="#">동행방</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="./theme.html" class="m">여행준비</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./theme.html">테마별 여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">숙소</a>
+                                </li>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">투어 & 티켓</a>
+                                </li>
+                                <li>
+                                    <a href="#">맛집</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="#">이벤트 & 할인</a>
-                    </li>
+                        <li>
+                            <a href="./travel_tip.html" class="m">커뮤니티</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./travel_tip.html">여행 팁 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행 후기</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통방</a>
+                                </li>
+                                <li>
+                                    <a href="#">동행방</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="#">여행자 센터</a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">현지 정보</a>
-                            </li>
-                            <li>
-                                <a href="#">긴급 연락처</a>
-                            </li>
-                            <li>
-                                <a href="#">여행자 보험</a>
-                            </li>
-                            <li>
-                                <a href="#">유심 · 이심</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a href="#" class="m">이벤트 & 할인</a>
+                        </li>
 
-                </ul>
-            </nav>
+                        <li>
+                            <a href="#" class="m">여행자 센터</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">현지 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">긴급 연락처</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자 보험</a>
+                                </li>
+                                <li>
+                                    <a href="#">유심 · 이심</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <div class="btn_box">
-                <button type="button" class="sch">
-                    <span class="h_hidden">검색</span>
-                </button>
-                <button type="button" class="login">
-                    <span class="h_hidden">로그인</span>
-                </button>
-                <!-- <button type="button" class="menu">
-                    <span class="line line_1"></span>
-                    <span class="line line_2"></span>
-                    <span class="h_hidden">메뉴</span>
-                </button> -->
+                    </ul>
+                </nav>
+
+                <div class="btn_box">
+                    <button type="button" class="sch">
+                    </button>
+                    <button type="button" class="login">
+                    </button>
+                    <button type="button" class="menu">
+                        <span class="line line_1"></span>
+                        <span class="line line_2"></span>
+                        <span class="line line_3"></span>
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    <!-- //header -->
 
-        <!-- section_목차 -->
-        <section id="contents_wrap">
+
+            <div class="side_menu">
+
+                <div class="close_box">
+                    <button type="button" class="close">
+                        <span class="line line_1"></span>
+                        <span class="line line_2"></span>
+                        <span class="h_hidden">닫기</span>
+                    </button>
+                </div>
+
+                <div class="side_inner">
+                    <ul>
+                        <li>
+                            <a href="#">브랜드 소개</a>
+                            <ul class="submenu_2">
+                                <li>
+                                    <a href="./brand.html">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">BI</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">여행준비</a>
+                            <ul class="submenu_2">
+                                <li>
+                                    <a href="./theme.html">테마별 여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">숙소</a>
+                                </li>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">투어 & 티켓</a>
+                                </li>
+                                <li>
+                                    <a href="#">맛집</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">커뮤니티</a>
+                            <ul class="submenu_2">
+                                <li>
+                                    <a href="./travel_tip.html">여행 팁 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행 후기</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통방</a>
+                                </li>
+                                <li>
+                                    <a href="#">동행방</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">이벤트 & 할인</a>
+                        </li>
+
+                        <li>
+                            <a href="#">여행자 센터</a>
+                            <ul class="submenu_2">
+                                <li>
+                                    <a href="#">현지 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">긴급 연락처</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자 보험</a>
+                                </li>
+                                <li>
+                                    <a href="#">유심 · 이심</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="side_bg"></div>
+
+        </header>
+        <!-- //header -->
+
+        <!-- article_목차 -->
+        <article id="contents_wrap">
             <div class="contents_head">
                 <h2>여행 준비</h2>
             </div>
@@ -136,10 +238,10 @@
                     <li><a href="#">숙소</a></li>
                     <li><a href="#">교통</a></li>
                     <li><a href="#">투어 & 티켓</a></li>
-                    <li ><a href="#">맛집</a></li>
+                    <li><a href="#">맛집</a></li>
                 </ul>
             </div>
-        </section>
+        </article>
         <!--//section_목차 -->
 
 
@@ -150,64 +252,66 @@
                 <h3>요즘 뜨고 있는 여행지</h3>
             </div>
 
-            <div class="slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="i1-1 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Portugal Algarve</span>
+                                    <p>포르투갈, 알가르브</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="item i1-1">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Portugal Algarve</span>
-                                <p>포르투갈, 알가르브</p>
+
+                    <div class="i1-2 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Turkey, Antalya</span>
+                                    <p>튀르키예, 안탈야 </p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+
+                    <div class="i1-3 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Italy, Amalfi Coast</span>
+                                    <p>이탈리아, 아말피 해안</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
+                    <div class="i1-4 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Estonia, Tallinn</span>
+                                    <p>에스토니아, 탈린</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="item  i1-2">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Turkey, Antalya</span>
-                                <p>튀르키예, 안탈야 </p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item  i1-3">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Italy, Amalfi Coast</span>
-                                <p>이탈리아, 아말피 해안</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-<!-- 
-                <div class="item  i1-4">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Estonia, Tallinn</span>
-                                <p>에스토니아, 탈린</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-
             </div>
         </section>
         <!-- //section_ 1-->
@@ -219,65 +323,67 @@
                 <h3>늘 인기 있는 여행지</h3>
             </div>
 
-            <div class="slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <div class="item i2-1">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>France, Paris</span>
-                                <p>프랑스, 파리</p>
+                    <div class="i2-1 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>France, Paris</span>
+                                    <p>프랑스, 파리</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+
+                    <div class="i2-2 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>England, London</span>
+                                    <p>영국, 런던</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
+                    <div class="i2-3 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Italy, Florence</span>
+                                    <p>이탈리아, 피렌체</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="i2-4 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Czech, Prague</span>
+                                    <p>체코, 프라하</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="item i2-2">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>England, London</span>
-                                <p>영국, 런던</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item i2-3">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Italy, Florence</span>
-                                <p>이탈리아, 피렌체</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-                <!-- <div class="item i2-4">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Czech, Prague</span>
-                                <p>체코, 프라하</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-
             </div>
         </section>
         <!-- //section_ 2-->
@@ -290,64 +396,67 @@
                 <h3>자연경관이 아름다운 여행지</h3>
             </div>
 
-            <div class="slide">
-                <div class="item i3-1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Switzerland</span>
-                                <p>스위스</p>
+                    <div class="i3-1 swiper-slide">
+
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Switzerland</span>
+                                    <p>스위스</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+
+                    <div class="i3-2 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Croatia, Plitvice<br> Lakes National Park</span>
+                                    <p>크로아티아, 플리트비체<br> 호수 국립공원</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
+                    <div class="i3-3 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Iceland, Haifoss</span>
+                                    <p>아이슬란드, 하이포스</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="i3-4 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Norway, Trolltunga</span>
+                                    <p>노르웨이, 트롤퉁가</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="item i3-2">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Croatia, Plitvice Lakes National Park</span>
-                                <p>크로아티아, 플리트비체 호수 국립공원</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item i3-3">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Iceland, Haifoss</span>
-                                <p>아이슬란드, 하이포스</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- <div class="item i3-4">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Norway, Trolltunga</span>
-                                <p>노르웨이, 트롤퉁가</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-
             </div>
         </section>
         <!-- //section_3 -->
@@ -360,64 +469,66 @@
                 <h3>문화와 역사가 풍부한 여행지</h3>
             </div>
 
-            <div class="slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <div class="item i4-1">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Italy, Rome</span>
-                                <p>이탈리아, 로마</p>
+                    <div class="i4-1 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Italy, Rome</span>
+                                    <p>이탈리아, 로마</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                        </a>
+                    </div>
+
+                    <div class="i4-2 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Vatican City</span>
+                                    <p>바티칸 시국</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
+                    <div class="i4-3 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Greece, Athens</span>
+                                    <p>그리스, 아테네</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="i4-4 swiper-slide">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Turkey, Istanbul</span>
+                                    <p>튀르키예, 이스탄불</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="item i4-2">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Vatican City</span>
-                                <p>바티칸 시국</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item i4-3">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Greece, Athens</span>
-                                <p>그리스, 아테네</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- <div class="item i4-4">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Turkey, Istanbul</span>
-                                <p>튀르키예, 이스탄불</p>
-                            </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-                
             </div>
 
         </section>
@@ -431,61 +542,86 @@
                 <h3>다양한 액티비티가 있는 여행지</h3>
             </div>
 
-            <div class="grid">
-                <div class="item i5-1">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Paragliding</span>
-                                <p>패러글라이딩</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide i5-1">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Paragliding</span>
+                                    <p>패러글라이딩</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <div class="item i5-2">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Cycling</span>
-                                <p>사이클링</p>
+                    <div class="swiper-slide i5-2">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Cycling</span>
+                                    <p>사이클링</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
+                        </a>
 
 
-                </div>
+                    </div>
 
-                <div class="item i5-3">
-                    <a href="#">
-                        <div class="item_inner">
-                            <div class="i_left">
-                                <span>Skiing</span>
-                                <p>스키</p>
+                    <div class="swiper-slide i5-3">
+                        <a href="#">
+                            <div class="item_inner">
+                                <div class="i_left">
+                                    <span>Skiing</span>
+                                    <p>스키</p>
+                                </div>
+                                <div class="i_right">
+                                    <img src="./img/sub/sub2/arrow.png" alt="arrow">
+                                </div>
                             </div>
-                            <div class="i_right">
-                                <img src="./img/sub/sub2/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
+
         </section>
         <!-- //section_5 -->
 
 
-             <!-- footer -->
-             <footer>
-                <div class="footer_inner">
-                    <div class="w_logo">
-                        <img src="./img/w_logo.png" alt="w_logo">
+        <!-- footer -->
+        <footer>
+
+            <!-- top_btn -->
+            <div class="top_btn">
+                <div class="t_btn">
+                    <button type="button"></button>
+                </div>
+            </div>
+            <!-- //top_btn -->
+
+            <div class="footer_inner">
+
+                <div class="g_logo">
+                    <img src="./img/g_logo.png" alt="g_logo">
+                </div>
+                <ul class="side">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">취소 및 환불 정책</a></li>
+                </ul>
+                <div class="btm_box">
+                    <div class="copyright">
+                        <p>본 사이트는 개인 포트폴리오 사이트로 상업적 목적이 아님을 알려드립니다.</p>
+                        <p>ⓒ copyright Ko Minchae. All Rights Reserved.</p>
                     </div>
                     <div class="icons">
                         <span>
@@ -502,8 +638,10 @@
                         </span>
                     </div>
                 </div>
-            </footer>
-            <!-- //footer -->
+
+            </div>
+        </footer>
+        <!-- //footer -->
 
     </div>
     <!-- //wrap -->

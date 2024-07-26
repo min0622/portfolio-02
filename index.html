@@ -7,23 +7,38 @@
     <title>viaEuro</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
 
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous" defer></script>
     <script src="./script/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js" defer></script>
+
 </head>
 
 <body>
+
     <div id="cursor">
-        <div class="custom-cursor"></div>
+        <div class="custom-cursor">
+            <div class="cursor_circle">
+                <img src="./img/main/cursor_circle.png" alt="cursor_circle">
+            </div>
+            <div class="cursor_arrow">
+                <img src="./img/main/cursor_arrow.png" alt="cursor">
+            </div>
+        </div>
     </div>
+
+
+
+
     <!-- wrap -->
     <div id="wrap">
 
@@ -274,12 +289,10 @@
                 </div>
 
                 <div class="video_box">
-                    <!-- <div class="video_inner"> -->
                     <video autoplay muted loop>
                         <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
                     </video>
                     <p class="v_txt">Right now, to Europe</p>
-                    <!-- </div> -->
                 </div>
 
             </div>
@@ -561,9 +574,10 @@
                 <div class="swiper mySwiper">
 
                     <div class="t_box_inner swiper-wrapper">
-                        <a href="#" class="tip swiper-slide">
 
-                            <div class="tip_box">
+                        <div class="tip swiper-slide">
+
+                            <a href="#" class="tip_box">
 
                                 <div class="top_text">
                                     <span class="m-color">Travel Tips</span>
@@ -580,10 +594,10 @@
                                     </p>
                                     <span class="m-color">#여행가방싸는방법 #짐꾸리기 #안전여행팁</span>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tip swiper-slide">
-                            <div class="tip_box">
+                            </a>
+                        </div>
+                        <div class="tip swiper-slide">
+                            <a href="#" class="tip_box">
                                 <div class="top_text">
                                     <span class="m-color">Travel Guides</span>
                                     <div class="t_title">
@@ -598,10 +612,10 @@
                                     <p>여행 일정을 계획하고 현지에서의 활동을 돕는 정보 제공 가이드입니다.</p>
                                     <span class="m-color">#추천일정 #쇼핑 #맛집추천 </span>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tip swiper-slide">
-                            <div class="tip_box">
+                            </a>
+                        </div>
+                        <div class="tip swiper-slide">
+                            <a href="#" class="tip_box">
                                 <div class="top_text">
                                     <span class="m-color">Travel Budget Tips</span>
                                     <div class="t_title">
@@ -616,10 +630,10 @@
                                     <p>여행 경비를 절약하는 간단하고 효과적인 방법들을 소개합니다.</p>
                                     <span class="m-color">#예산팁 #알뜰여행 #저비용여행</span>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#" class="tip swiper-slide">
-                            <div class="tip_box">
+                            </a>
+                        </div>
+                        <div class="tip swiper-slide">
+                            <a href="#" class="tip_box">
                                 <div class="top_text">
                                     <span class="m-color">Travel Knowledge</span>
                                     <div class="t_title">
@@ -634,8 +648,9 @@
                                     <p>여행지의 역사적 배경부터 현지 문화, 주요 관광지 정보까지 다양한 여행 관련 지식을 다룹니다.</p>
                                     <span class="m-color">#여행상식 #문화상식 #긴급상황대처법</span>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -742,7 +757,7 @@
                 </ul>
                 <div class="btm_box">
                     <div class="copyright">
-                        <p>이 사이트는 100% 개인작업입니다.</p>
+                        <p>본 사이트는 개인 포트폴리오 사이트로 상업적 목적이 아님을 알려드립니다.</p>
                         <p>ⓒ copyright Ko Minchae. All Rights Reserved.</p>
                     </div>
                     <div class="icons">
@@ -767,7 +782,7 @@
 
     </div>
     <!-- //wrap -->
-     
+
 </body>
 
 </html>

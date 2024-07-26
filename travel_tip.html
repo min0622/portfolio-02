@@ -8,29 +8,142 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/travel_tip.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+
+    <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous"></script>
+    <script src="./script/travel_tip.js" defer></script>
+    
 </head>
 
 <body>
+   
     <!-- wrap -->
     <div id="wrap">
+        
+        <!-- header -->
+        <header>
+            
+            <div class="header_inner">
+                
+                
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./img/w_logo.png" alt="logo">
+                        <span class="h_hidden">비아유로</span>
+                    </a>
+                </h1>
 
-      <!-- header -->
-      <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./brand.html" class="m">브랜드 소개</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./brand.html">브랜드 스토리</a>
+                                </li>
+                                <li>
+                                    <a href="#">BI</a>
+                                </li>
+                            </ul>
+                        </li>
 
-        <div class="header_inner">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./img/w_logo.png" alt="logo">
-                    <span class="h_hidden">비아유로</span>
-                </a>
-            </h1>
+                        <li>
+                            <a href="./theme.html" class="m">여행준비</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./theme.html">테마별 여행지</a>
+                                </li>
+                                <li>
+                                    <a href="#">숙소</a>
+                                </li>
+                                <li>
+                                    <a href="#">교통</a>
+                                </li>
+                                <li>
+                                    <a href="#">투어 & 티켓</a>
+                                </li>
+                                <li>
+                                    <a href="#">맛집</a>
+                                </li>
+                            </ul>
+                        </li>
 
-            <nav>
+                        <li>
+                            <a href="./travel_tip.html" class="m">커뮤니티</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="./travel_tip.html">여행 팁 공유</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행 후기</a>
+                                </li>
+                                <li>
+                                    <a href="#">소통방</a>
+                                </li>
+                                <li>
+                                    <a href="#">동행방</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="m">이벤트 & 할인</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="m">여행자 센터</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">현지 정보</a>
+                                </li>
+                                <li>
+                                    <a href="#">긴급 연락처</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행자 보험</a>
+                                </li>
+                                <li>
+                                    <a href="#">유심 · 이심</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            <div class="btn_box">
+                <button type="button" class="sch">
+                </button>
+                <button type="button" class="login">
+                </button>
+                <button type="button" class="menu">
+                    <span class="line line_1"></span>
+                    <span class="line line_2"></span>
+                    <span class="line line_3"></span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="side_menu">
+
+            <div class="close_box">
+                <button type="button" class="close">
+                    <span class="line line_1"></span>
+                    <span class="line line_2"></span>
+                    <span class="h_hidden">닫기</span>
+                </button>
+            </div>
+
+            <div class="side_inner">
                 <ul>
                     <li>
-                        <a href="./brand.html">브랜드 소개</a>
-                        <ul class="submenu">
+                        <a href="#">브랜드 소개</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./brand.html">브랜드 스토리</a>
                             </li>
@@ -41,8 +154,8 @@
                     </li>
 
                     <li>
-                        <a href="./theme.html">여행준비</a>
-                        <ul class="submenu">
+                        <a href="#">여행준비</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./theme.html">테마별 여행지</a>
                             </li>
@@ -62,8 +175,8 @@
                     </li>
 
                     <li>
-                        <a href="./travel_tip.html">커뮤니티</a>
-                        <ul class="submenu">
+                        <a href="#">커뮤니티</a>
+                        <ul class="submenu_2">
                             <li>
                                 <a href="./travel_tip.html">여행 팁 공유</a>
                             </li>
@@ -85,7 +198,7 @@
 
                     <li>
                         <a href="#">여행자 센터</a>
-                        <ul class="submenu">
+                        <ul class="submenu_2">
                             <li>
                                 <a href="#">현지 정보</a>
                             </li>
@@ -105,22 +218,10 @@
                     </li>
 
                 </ul>
-            </nav>
-
-            <div class="btn_box">
-                <button type="button" class="sch">
-                    <span class="h_hidden">검색</span>
-                </button>
-                <button type="button" class="login">
-                    <span class="h_hidden">로그인</span>
-                </button>
-                <!-- <button type="button" class="menu">
-                    <span class="line line_1"></span>
-                    <span class="line line_2"></span>
-                    <span class="h_hidden">메뉴</span>
-                </button> -->
             </div>
         </div>
+        <div class="side_bg"></div>
+
     </header>
     <!-- //header -->
 
@@ -226,12 +327,32 @@
         <!-- //section_2 -->
 
 
+   <!-- footer -->
+   <footer>
 
-     <!-- footer -->
-     <footer>
-        <div class="footer_inner">
-            <div class="w_logo">
-                <img src="./img/w_logo.png" alt="w_logo">
+    <!-- top_btn -->
+    <div class="top_btn">
+        <div class="t_btn">
+            <button type="button"></button>
+        </div>
+    </div>
+    <!-- //top_btn -->
+
+    <div class="footer_inner">
+
+        <div class="g_logo">
+            <img src="./img/g_logo.png" alt="g_logo">
+        </div>
+        <ul class="side">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">여행약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">취소 및 환불 정책</a></li>
+        </ul>
+        <div class="btm_box">
+            <div class="copyright">
+                <p>본 사이트는 개인 포트폴리오 사이트로 상업적 목적이 아님을 알려드립니다.</p>
+                <p>ⓒ copyright Ko Minchae. All Rights Reserved.</p>
             </div>
             <div class="icons">
                 <span>
@@ -248,8 +369,10 @@
                 </span>
             </div>
         </div>
-    </footer>
-    <!-- //footer -->
+
+    </div>
+</footer>
+<!-- //footer -->
 
     </div>
     <!-- //wrap -->
