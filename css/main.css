@@ -1,44 +1,7 @@
 @import url(./common.css);
 
 
- /* cursor */
- body {
-    cursor: none;
 
-}
-
-a {
-    cursor: none;
-}
-
-/* pointer-events: none; 커서가 아닌 다른 요소와의 상호작용 방지  */
-#cursor {
-    position: fixed;
-    /* z-index: 99999; */
-    z-index: 995;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-
-.custom-cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #5F9DF7;
-    pointer-events: none;
-    position: absolute;
-    transform-origin: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width .2s ease, height .2s ease;
-}
-
-
-
-
-  
 
 /* wrap */
 #wrap {
@@ -767,6 +730,41 @@ main .video_box video {
 @media screen and (min-width:1200px) {
 
 
+ /* cursor */
+ body {
+    cursor: none;
+
+}
+
+a {
+    cursor: none;
+}
+
+/* pointer-events: none; 커서가 아닌 다른 요소와의 상호작용 방지  */
+#cursor {
+    position: fixed;
+    z-index: 99999;
+    /* z-index: 995; */
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5F9DF7;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width .2s ease, height .2s ease;
+}
+
+
 
     .custom-cursor.expand {
         width: 126px;
@@ -849,13 +847,6 @@ main .video_box video {
 
 
 @media screen and (max-width:1200px) {
-
-    .cursor_circle{
-        display: none;
-    }
-    .cursor_arrow{
-        display: none;
-    }
 
 
 

@@ -226,7 +226,7 @@ button {
     display: block;
     border: none;
     background-color: transparent;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     cursor: pointer;
     padding: 0;
 }
@@ -237,6 +237,8 @@ button {
     background-size: 100%;
     width: 24px;
     height: 24px;
+    margin-left: 25px;
+
 }
 
 .btn_box .login {
@@ -245,10 +247,14 @@ button {
     background-repeat: no-repeat;
     width: 28px;
     height: 24px;
+    margin-left: 25px;
+
 }
 
 .btn_box .menu {
     display: none;
+    margin-left: 25px;
+
 }
 
 
@@ -266,6 +272,7 @@ button {
 
     color: #000;
     /* right: 0; */
+
 }
 
 
@@ -303,14 +310,72 @@ button {
     transform: translateX(-50%) rotate(-45deg);
 }
 
+
+/*수정중  */
+.side_menu {
+    width: 57%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    background-color: #fff;
+    /* background-color: slateblue; */
+
+    color: #000;
+
+}
 .side_inner {
+    width: 100%;
+    height: calc(100% - 160px);
+    padding-bottom: 20vh;
+    padding-top: 40px;
+    overflow: hidden;
+    overflow-y: auto;
+    /* background-color: gold; */
+}
+.side_inner::-webkit-scrollbar {
+    /* 크롬, 사파리, 엣지 */
+    display: none;
+}
+.side_btn_box{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+.side_sch {
+    background-image: url(../img/btn_1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.side_login {
+    background-image: url(../img/btn_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 20px;
+}
+
+
+
+/* 원본 */
+/* .side_inner {
     width: 100%;
     height: 100%;
     padding-bottom: 30vh;
     padding-top: 40px;
     overflow: hidden;
     overflow-y: auto;
-}
+} */
 
 .side_inner>ul>li {
     width: 100%;
