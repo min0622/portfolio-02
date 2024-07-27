@@ -260,7 +260,7 @@ button {
 
 
 /* side_menu */
-.side_menu {
+/* .side_menu {
     width: 57%;
     height: 100%;
     overflow: hidden;
@@ -271,9 +271,8 @@ button {
     background-color: #fff;
 
     color: #000;
-    /* right: 0; */
 
-}
+} */
 
 
 .close_box {
@@ -333,7 +332,6 @@ button {
     padding-top: 40px;
     overflow: hidden;
     overflow-y: auto;
-    /* background-color: gold; */
 }
 .side_inner::-webkit-scrollbar {
     /* 크롬, 사파리, 엣지 */
