@@ -25,6 +25,8 @@ $(function () {
   $('.menu').click(function () {
     $('.side_menu').stop(true).animate({ right: '0' }, 600);
     $('.side_bg').stop(true).delay(200).fadeIn();
+
+
   });
   $('.close').click(function () {
     $('.side_menu').stop(true).animate({ right: '-100%' }, 600);
@@ -32,17 +34,36 @@ $(function () {
   });
 
 
-  $('.side_menu>.side_inner>ul>li').on({
-    mouseover: function () {
-      $(this).find('.submenu_2').stop(true).slideDown(300)
 
-    },
 
-    mouseout: function () {
-      $(this).find('.submenu_2').stop(true).slideUp()
+  $('.side_menu>.side_inner>ul>li').click(function(){
+    let submenu_2 =  $(this).find('.submenu_2')
 
-    }
+    //  li서브들 다올라감
+    $('.submenu_2').not(submenu_2).slideUp().removeClass('show');
+
+
+    // 선택된 li만 내려가게
+    submenu_2.stop(true).slideToggle().toggleClass('show');
+
+
   });
+
+
+
+
+  
+  // $('.side_menu>.side_inner>ul>li').on({
+  //   mouseover: function () {
+  //     $(this).find('.submenu_2').stop(true).slideDown(300)
+
+  //   },
+
+  //   mouseout: function () {
+  //     $(this).find('.submenu_2').stop(true).slideUp()
+
+  //   }
+  // });
 
   
   // header _스크롤
@@ -62,12 +83,6 @@ $(function () {
 
   });
 
-
-
-
-
-  // main
-  $('.v_txt').stop(true).delay(1000).fadeOut(800);
 
 
 
@@ -111,7 +126,7 @@ $(function () {
   $(window).resize(function () {
 
     let size = innerWidth;
-    console.log(size)
+    // console.log(size)
 
     $('.menu').click(function () {
 
@@ -139,108 +154,20 @@ $(function () {
 
       }
 
-
-
     });
 
 
+    // 1200px이상에선 사라지게
+    if( size > 1200 ) {
+    $('.side').css({display:'none'})
+    
+  } else {
+    $('.side').css({display:'block'})
+
+  }
 
 
 
-
-
-
-
-
-
-  });
-
-
-
-
-  // gsap_main
-  let mm = gsap.matchMedia();
-
-
-  mm.add("(min-width: 769px)", () => {
-
-
-    const ani = gsap.timeline();
-    // ani.from('main .video_box', { xPercent: -50 })
-    ani.from('main .video_box', { x:'0' })
-    ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
-      .to('main .video_box', { scale: 1.2 })
-    ScrollTrigger.create({
-      animation: ani,
-      trigger: "main",
-      start: "2% top",
-      end: "+=800",
-      scrub: true,
-      pin: true,
-      markers: false,
-      anticipatePin: 1,
-
-
-    });
-
-
-  });
-
-  mm.add("(max-width: 768px)", () => {
-
-    const ani_mobile = gsap.timeline();
-    // ani_mobile.from('main .video_box', { yPercent: -50 })
-    ani_mobile.from('main .video_box', { y:'0'})
-    ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 })
-      .to('main .video_box', { scale: 1.2 })
-    ScrollTrigger.create({
-      animation: ani_mobile,
-      trigger: "main",
-      start: "2% top",
-      end: "+=100",
-      scrub: true,
-      pin: true,
-      markers: false,
-      anticipatePin: 1
-
-
-
-      
-    });
-
-
-  });
-
-
-
-
-
-  // gsap_section_2
-
-  const section_2 = document.querySelector("#section_2");
-  const horizontal = document.querySelector("#horizontal");
-  const sections = gsap.utils.toArray("#horizontal > section");
-
-  gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-      trigger: section_2,
-      start: "top top",
-      // start: "-16% top",
-      end: () => "+=" + (horizontal.offsetWidth - innerWidth),
-      pin: true,
-      scrub: 1,
-      snap: {
-        snapTo: 1 / (sections.length - 1),
-        inertia: false,
-        // duration: { min: 0.1, max: 0.1 }
-        duration: { min: 0.3, max: 0.3 }
-      },
-      invalidateOnRefresh: true,
-      anticipatePin: 1,
-      markers: false
-    }
   });
 
 
@@ -273,97 +200,6 @@ $(function () {
     }
 
   });
-
-
-
-
-
-
-  // // swiper
-  // var swiper = new Swiper(".mySwiper", {
-  //   slidesPerView: 1.2,
-  //   spaceBetween: 20,
-  //   centeredSlides: true,
-  //   loop: true,
-
-  //   breakpoints: {
-
-  //     431: {
-  //       slidesPerView: 1.2,
-  //       spaceBetween: 30,
-  //     },
-  //     576: {
-  //       slidesPerView: 1.5,
-  //       spaceBetween: 50
-
-  //     },
-  //     768: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 40,
-
-  //     },
-  //     992: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 70,
-
-  //     },
-  //     1020: {
-  //       slidesPerView: 2.5,
-  //       spaceBetween: 50,
-
-  //     },
-  //     1400: {
-  //       slidesPerView: 2.5,
-  //       spaceBetween: 140,
-  //       loop: false
-
-  //     },
-  //     1600: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 90,
-  //       loop: false
-  //     }
-  //     // 1600 : {
-  //     //   slidesPerView: 3, 
-  //     //   spaceBetween: 90,
-  //     //   loop:false
-  //     // },
-  //   },
-  // });
-
-
-  // swiper
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    centeredSlides: false,
-    loop: true,
-
-    breakpoints: {
-      576: {
-        spaceBetween: 50,
-        centeredSlides: false,
-
-      },
-      1020: {
-        spaceBetween: 40,
-        centeredSlides: false,
-
-      },
-      1201: {
-        slidesPerView: 'auto',
-        spaceBetween: 60,
-        centeredSlides: true,
-        loop: false
-      }
-
-    }
-  });
-
-
-
-
-
 
 
 });

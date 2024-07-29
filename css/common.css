@@ -260,6 +260,10 @@ button {
 
 
 /* side_menu */
+.side{
+width: 100%;
+position: relative;
+}
 /* .side_menu {
     width: 57%;
     height: 100%;
@@ -310,7 +314,8 @@ button {
 }
 
 
-/*수정중  */
+/*수정  */
+
 .side_menu {
     width: 57%;
     height: 100%;
@@ -335,7 +340,7 @@ button {
 }
 .side_inner::-webkit-scrollbar {
     /* 크롬, 사파리, 엣지 */
-    display: none;
+        display: none;
 }
 .side_btn_box{
     width: 100%;
@@ -388,6 +393,15 @@ button {
     font-size: 24px;
 }
 
+
+.submenu_2.show{
+    display: block;
+}
+
+
+
+
+
 .side_inner .submenu_2 {
     font-family: 'pre-m';
     font-size: 20px;
@@ -403,8 +417,9 @@ button {
     color: #fff;
     padding: 6px;
 
-
     display: none;
+    
+    overflow: hidden;
 }
 
 .side_inner .submenu_2>li {

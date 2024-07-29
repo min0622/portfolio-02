@@ -63,7 +63,8 @@ $(function(){
       // 더보기버튼
   $('.swiper-slide').on({
     mouseover: function () {
-      $(this).find('.i_right ').addClass('b_on')
+      $(this).find('.i_right ').addClass('b_on');
+
     },
     mouseout: function () {
       $(this).find('.i_right ').removeClass('b_on')
@@ -83,6 +84,8 @@ $(function(){
     }
 
   });
+
+ 
 
 
 

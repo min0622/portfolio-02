@@ -13,14 +13,14 @@
 
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/15c2d7fd92.js" crossorigin="anonymous" defer></script>
-    <script src="./script/main.js" defer></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-
+    <script src="./script/swiper.js" defer></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js" defer></script>
-
+    <script src="./script/gsap.js" defer></script>
+    <script src="./script/main.js" defer></script>
 </head>
 
 <body>
@@ -149,109 +149,114 @@
             </div>
 
 
-            <div class="side_menu">
-
-                <div class="close_box">
-                    <button type="button" class="close">
-                        <span class="line line_1"></span>
-                        <span class="line line_2"></span>
-                        <span class="h_hidden">닫기</span>
-                    </button>
-                </div>
-
-                <div class="side_inner">
-                    <ul>
-                        <li>
-                            <a href="#">브랜드 소개</a>
-                            <ul class="submenu_2">
-                                <li>
-                                    <a href="./brand.html">브랜드 스토리</a>
-                                </li>
-                                <li>
-                                    <a href="#">BI</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">여행준비</a>
-                            <ul class="submenu_2">
-                                <li>
-                                    <a href="./theme.html">테마별 여행지</a>
-                                </li>
-                                <li>
-                                    <a href="#">숙소</a>
-                                </li>
-                                <li>
-                                    <a href="#">교통</a>
-                                </li>
-                                <li>
-                                    <a href="#">투어 & 티켓</a>
-                                </li>
-                                <li>
-                                    <a href="#">맛집</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">커뮤니티</a>
-                            <ul class="submenu_2">
-                                <li>
-                                    <a href="./travel_tip.html">여행 팁 공유</a>
-                                </li>
-                                <li>
-                                    <a href="#">여행 후기</a>
-                                </li>
-                                <li>
-                                    <a href="#">소통방</a>
-                                </li>
-                                <li>
-                                    <a href="#">동행방</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#">이벤트 & 할인</a>
-                        </li>
-
-                        <li>
-                            <a href="#">여행자 센터</a>
-                            <ul class="submenu_2">
-                                <li>
-                                    <a href="#">현지 정보</a>
-                                </li>
-                                <li>
-                                    <a href="#">긴급 연락처</a>
-                                </li>
-                                <li>
-                                    <a href="#">여행자 보험</a>
-                                </li>
-                                <li>
-                                    <a href="#">유심 · 이심</a>
-                                </li>
-                                <li>
-                                    <a href="#">FAQ</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <div class="side_btn_box">
-                    <button type="button" class="side_sch">
-                    </button>
-                    <button type="button" class="side_login">
-                    </button>
-                </div>
-                
-            </div>
-            <div class="side_bg"></div>
-
+            
         </header>
         <!-- //header -->
+        
+        <!-- side -->
+        <article class="side">
+             <div class="side_menu">
+     
+                 <div class="close_box">
+                     <button type="button" class="close">
+                         <span class="line line_1"></span>
+                         <span class="line line_2"></span>
+                         <span class="h_hidden">닫기</span>
+                     </button>
+                 </div>
+     
+                 <div class="side_inner">
+                     <ul>
+                         <li>
+                             <a href="#">브랜드 소개</a>
+                             <ul class="submenu_2">
+                                 <li>
+                                     <a href="./brand.html">브랜드 스토리</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">BI</a>
+                                 </li>
+                             </ul>
+                         </li>
+     
+                         <li>
+                             <a href="#">여행준비</a>
+                             <ul class="submenu_2">
+                                 <li>
+                                     <a href="./theme.html">테마별 여행지</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">숙소</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">교통</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">투어 & 티켓</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">맛집</a>
+                                 </li>
+                             </ul>
+                         </li>
+     
+                         <li>
+                             <a href="#">커뮤니티</a>
+                             <ul class="submenu_2">
+                                 <li>
+                                     <a href="./travel_tip.html">여행 팁 공유</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">여행 후기</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">소통방</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">동행방</a>
+                                 </li>
+                             </ul>
+                         </li>
+     
+                         <li>
+                             <a href="#">이벤트 & 할인</a>
+                         </li>
+     
+                         <li>
+                             <a href="#">여행자 센터</a>
+                             <ul class="submenu_2">
+                                 <li>
+                                     <a href="#">현지 정보</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">긴급 연락처</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">여행자 보험</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">유심 · 이심</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">FAQ</a>
+                                 </li>
+                             </ul>
+                         </li>
+     
+                     </ul>
+     
+                 </div>
+                 <div class="side_btn_box">
+                     <button type="button" class="side_sch">
+                     </button>
+                     <button type="button" class="side_login">
+                     </button>
+                 </div>
+                 
+             </div>
+             <div class="side_bg"></div>
+         </article>
+        <!-- //side -->
 
         <!-- main -->
         <main>
@@ -300,7 +305,6 @@
                     <video autoplay muted loop>
                         <source src="./video/santorini_airplane_2.mp4" type="video/mp4">
                     </video>
-                    <!-- <p class="v_txt">Right now, to Europe</p> -->
                 </div>
 
             </div>

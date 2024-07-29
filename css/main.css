@@ -189,7 +189,7 @@ main .video_box video {
     width: 4184px;
     height: 100%;
     display: flex;
-    animation: flow_i 25s linear infinite;
+    animation: flow_i 90s linear infinite;
 }
 
 @keyframes flow_i {
@@ -726,44 +726,41 @@ main .video_box video {
 
 /* 반응형 */
 
-
-@media screen and (min-width:1200px) {
-
-
- /* cursor */
- body {
-    cursor: none;
+/* cursor */
+body {
+   cursor: none;
 
 }
 
 a {
-    cursor: none;
+   cursor: none;
 }
 
 /* pointer-events: none; 커서가 아닌 다른 요소와의 상호작용 방지  */
 #cursor {
-    position: fixed;
-    z-index: 99999;
-    /* z-index: 995; */
-    left: 0;
-    top: 0;
-    pointer-events: none;
+   position: fixed;
+   z-index: 99999;
+   /* z-index: 995; */
+   left: 0;
+   top: 0;
+   pointer-events: none;
 }
 
 .custom-cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #5F9DF7;
-    pointer-events: none;
-    position: absolute;
-    transform-origin: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width .2s ease, height .2s ease;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #5F9DF7;
+   pointer-events: none;
+   position: absolute;
+   transform-origin: center center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: width .2s ease, height .2s ease;
 }
 
+@media screen and (min-width:1200px) {
 
 
     .custom-cursor.expand {
@@ -771,8 +768,6 @@ a {
         height: 126px;
         background-color: #5F9DF7;
     }
-
-
 
     .cursor_circle {
         position: absolute;
@@ -826,9 +821,6 @@ a {
     }
 
     /* video */
-    /* main .video_box p {
-        font-size: 3.8rem;
-    } */
 
     main .video_box {
         width: 55%;
@@ -848,7 +840,12 @@ a {
 
 @media screen and (max-width:1200px) {
 
+    /* cursor */
 
+    .cursor_circle,
+    .cursor_arrow {
+    display: none;   
+    }
 
 
     /* header */
@@ -877,12 +874,6 @@ a {
         height: 100px;
         line-height: 100px;
     }
-
-    /* video */
-
-    /* main .video_box p {
-        font-size: 3.3rem;
-    } */
 
     /* section_1 */
 
@@ -1079,15 +1070,8 @@ a {
 
 @media screen and (max-width:991px) {
 
-    /* main */
-    /* .main_inner {
-        height: 84vh;
-    } */
 
     /* video */
-    /* main .video_box p {
-        font-size: 3rem;
-    } */
 
     main .video_box {
         width: 60%;
@@ -1201,10 +1185,6 @@ a {
     }
 
     /* video */
-    /* main .video_box p {
-        font-size: 2.2rem;
-    } */
-
     main .video_box {
         width: 82%;
         padding-bottom: 46.13%;
@@ -1329,11 +1309,8 @@ a {
     }
 
     /* video */
-    /* main .video_box p {
-        font-size: 1.8rem;
-    } */
-
-    main .video_box {
+ 
+    main .video_box{
         width: 85%;
         padding-bottom: 47.81%;
         /* border-radius:56px;  */

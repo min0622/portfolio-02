@@ -13,8 +13,10 @@
     align-items: center;
     text-align: center;
     padding-top: 280px;
-    padding-bottom: 176px;
     position: relative;
+    
+    padding-bottom: 5rem;
+
 }
 
 #contents_wrap .contents_head {
@@ -198,7 +200,7 @@ footer {
     /* contents_wrap */
     #contents_wrap {
         padding-top: 240px;
-        padding-bottom: 120px;
+        padding-bottom: 3rem;
     }
 
     #contents_wrap .contents_head {
@@ -369,7 +371,7 @@ font-size: 1.9rem;
     /* contents_wrap */
     #contents_wrap {
         padding-top: 160px;
-        padding-bottom: 80px;
+        padding-bottom: 2rem;
 
     }
 
