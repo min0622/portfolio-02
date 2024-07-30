@@ -50,7 +50,7 @@ main {
     width: 100%;
     height: 100vh;
     position: relative;
-    
+    background-color: gold;
 
 }
 
@@ -126,6 +126,7 @@ main .flow_text_box .bold {
 }
 
 /* vedio */
+
 main .video_box {
     width: 50%;
     padding-bottom: 28.13%;
