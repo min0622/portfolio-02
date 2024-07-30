@@ -1,10 +1,17 @@
 $(function(){
 
  // gsap_main
+
+
+
+
+
+//  1차 수정: 만족
+ // gsap_main
  let mm = gsap.matchMedia();
 
 
- mm.add("(min-width: 769px)", () => {
+ mm.add("(min-width: 822px)", () => {
 
 
    const ani = gsap.timeline();
@@ -20,7 +27,8 @@ $(function(){
      scrub: true,
      pin: true,
      markers: false,
-     anticipatePin: 1,
+     markers: true,
+     anticipatePin: 1
 
 
    });
@@ -28,17 +36,17 @@ $(function(){
 
  });
 
- mm.add("(max-width: 768px)", () => {
+ mm.add("(max-width: 821px)", () => {
 
    const ani_mobile = gsap.timeline();
-   // ani_mobile.from('main .video_box', { yPercent: -50 })
-   ani_mobile.from('main .video_box', { y:'0'})
-   ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 })
+  //  ani_mobile.from('main .video_box', { y:'0'})
+   ani_mobile.from('main .video_box', {width: '80%', height:'0',paddingBottom:'45%', y:'0'})
+   ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 ,duration: .5})
      .to('main .video_box', { scale: 1.2 })
    ScrollTrigger.create({
      animation: ani_mobile,
      trigger: "main",
-     start: "-15% top",
+     start: "-5% top",
      end: "+=150",
      scrub: true,
      pin: true,
@@ -47,12 +55,71 @@ $(function(){
      anticipatePin: 1
 
 
-
-     
    });
 
 
  });
+
+ 
+
+
+
+
+
+
+// 원본
+//  let mm = gsap.matchMedia();
+
+
+//  mm.add("(min-width: 769px)", () => {
+
+
+//    const ani = gsap.timeline();
+//    // ani.from('main .video_box', { xPercent: -50 })
+//    ani.from('main .video_box', { x:'0' })
+//    ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
+//      .to('main .video_box', { scale: 1.2 })
+//    ScrollTrigger.create({
+//      animation: ani,
+//      trigger: "main",
+//      start: "2% top",
+//      end: "+=800",
+//      scrub: true,
+//      pin: true,
+//      markers: false,
+//      anticipatePin: 1,
+
+
+//    });
+
+
+//  });
+
+//  mm.add("(max-width: 768px)", () => {
+
+//    const ani_mobile = gsap.timeline();
+//    // ani_mobile.from('main .video_box', { yPercent: -50 })
+//    ani_mobile.from('main .video_box', { y:'0'})
+//    ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 })
+//      .to('main .video_box', { scale: 1.2 })
+//    ScrollTrigger.create({
+//      animation: ani_mobile,
+//      trigger: "main",
+//      start: "-15% top",
+//      end: "+=150",
+//      scrub: true,
+//      pin: true,
+//      markers: false,
+//      markers: true,
+//      anticipatePin: 1
+
+
+
+     
+//    });
+
+
+//  });
 
 
 
