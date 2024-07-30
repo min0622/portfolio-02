@@ -11,19 +11,22 @@ $(function(){
  let mm = gsap.matchMedia();
 
 
- mm.add("(min-width: 822px)", () => {
+ mm.add("(min-width: 769px)", () => {
+//  mm.add("(min-width: 821px)", () => {
 
 
    const ani = gsap.timeline();
-   // ani.from('main .video_box', { xPercent: -50 })
+  //  ani.from('main .video_box', { x:'0' })
    ani.from('main .video_box', { x:'0' })
+   
    ani.to('main .video_box', { width: '100%', height: '100%', borderRadius: 120, duration: .5 })
      .to('main .video_box', { scale: 1.2 })
    ScrollTrigger.create({
      animation: ani,
      trigger: "main",
      start: "2% top",
-     end: "+=800",
+    //  end: "+=800",
+     end: "+=400",
      scrub: true,
      pin: true,
      markers: false,
@@ -36,18 +39,20 @@ $(function(){
 
  });
 
- mm.add("(max-width: 821px)", () => {
+ mm.add("(max-width: 768px)", () => {
+//  mm.add("(max-width: 809px)", () => {
 
    const ani_mobile = gsap.timeline();
-  //  ani_mobile.from('main .video_box', { y:'0'})
-   ani_mobile.from('main .video_box', {width: '80%', height:'0',paddingBottom:'45%', y:'0'})
-   ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 ,duration: .5})
+   ani_mobile.from('main .video_box', { y:'0'})
+  //  ani_mobile.from('main .video_box', {width: '80%', paddingBottom:'45%', y:'0'})
+
+   ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 ,duration: .5, top:'50%'})
      .to('main .video_box', { scale: 1.2 })
    ScrollTrigger.create({
      animation: ani_mobile,
      trigger: "main",
      start: "-5% top",
-     end: "+=150",
+     end: "+=200",
      scrub: true,
      pin: true,
      markers: false,
@@ -59,6 +64,32 @@ $(function(){
 
 
  });
+
+//  mm.add("(min-width: 810px) and (max-width: 820px)", () => {
+
+//    const ani_mobile = gsap.timeline();
+//   //  ani_mobile.from('main .video_box', { y:'0'})
+//    ani_mobile.from('main .video_box', { top:'50%'})
+//    ani_mobile.to('main .video_box', { width: '100%', height: '100%', borderRadius: 100 ,duration: .5})
+//      .to('main .video_box', { scale: 1.2 })
+//    ScrollTrigger.create({
+//      animation: ani_mobile,
+//      trigger: "main",
+//      start: "-5% top",
+//      end: "+=400",
+//     //  start: "-5% top",
+//     //  end: "+=150",
+//      scrub: true,
+//      pin: true,
+//      markers: false,
+//      markers: true,
+//      anticipatePin: 1
+
+
+//    });
+
+
+//  });
 
  
 
