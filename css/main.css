@@ -1510,9 +1510,9 @@ margin-top: 10%;
 
 }
 
-/* @media screen and (min-height:359px ) and (max-height: 580px) {
+@media screen and (min-height:359px ) and (max-height: 580px) {
 
     .main_inner{
         top: 12%;
     }
-} */
+}
