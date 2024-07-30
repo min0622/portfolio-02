@@ -1101,8 +1101,8 @@ a {
 @media screen and (max-width:767px) {
 
     .main_inner {
-        height: 80vh;
-
+        /* height: 80vh; */
+margin-top: 10%;
     }
 
     /* video */
