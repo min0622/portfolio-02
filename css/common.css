@@ -682,6 +682,7 @@ footer .top_btn {
 
 @media screen and (max-width:575px) {
 
+    
     .btn_box .sch,
     .btn_box .login {
         display: none;
@@ -689,6 +690,11 @@ footer .top_btn {
     /* side_menu */
     .side_menu {
         width: 100%;
+    }
+
+    /* footer */
+    .btm_box .copyright {
+        font-size: 0.8rem;
     }
 }
 
@@ -723,6 +729,9 @@ footer .top_btn {
         flex-wrap: wrap;
     }
 
+    .btm_box .copyright {
+        font-size: 0.7rem;
+    }
 
     /* top_btn */
     .t_btn {

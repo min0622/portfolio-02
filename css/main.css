@@ -243,7 +243,7 @@ main .video_box video {
     margin: auto;
     margin-top: 130px;
     padding: 0 20px;
-
+background-color: #fff;
 }
 
 .s_hidden {
