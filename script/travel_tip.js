@@ -44,22 +44,6 @@ $(function(){
   });
 
 
-// header _스크롤
-$(function () {
-  var prevScrollTop = 0;
-
-  document.addEventListener("scroll", function () {
-
-    var nowScrollTop = $(window).scrollTop(); 
-    if (nowScrollTop > prevScrollTop) { $('header').addClass('active'); }
-   
-    else { $('header').removeClass('active'); } 
-    prevScrollTop = nowScrollTop;  
-
-  });
-
-});
-
 
   // scroll
   let spot = $('#item_list').offset().top;
@@ -146,3 +130,27 @@ $(function () {
 });
 
 
+
+
+
+
+//js
+document.addEventListener('DOMContentLoaded', () => {
+
+  //  header 스크롤시 숨김, 보임
+  let prevScrollTop = 0; // 전역 변수로 선언
+
+  document.addEventListener("scroll", function () {
+    const nowScrollTop = $(window).scrollTop();
+
+    if (nowScrollTop > prevScrollTop) {
+      $('header').addClass('active');
+    } else {
+      $('header').removeClass('active');
+    }
+
+    prevScrollTop = nowScrollTop;
+  });
+
+
+});

@@ -44,22 +44,6 @@ $(function(){
       }
     });
   
-    // header _스크롤
-    $(function () {
-      var prevScrollTop = 0;
-  
-      document.addEventListener("scroll", function () {
-  
-        var nowScrollTop = $(window).scrollTop(); 
-        if (nowScrollTop > prevScrollTop) { $('header').addClass('active'); }
-       
-        else { $('header').removeClass('active'); } 
-        prevScrollTop = nowScrollTop;  
-  
-      });
-  
-    });
-  
       // 더보기버튼
   $('.swiper-slide').on({
     mouseover: function () {
@@ -197,29 +181,28 @@ $(function(){
 
 
 
-
-
-
-
-
-
 });
 
 document.addEventListener('DOMContentLoaded',()=>{
-  var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 'auto',
-    slidesPerView: 3,
-    spaceBetween: 10,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+
+
+ //  header 스크롤시 숨김, 보임
+ let prevScrollTop = 0; // 전역 변수로 선언
+
+ document.addEventListener("scroll", function () {
+   const nowScrollTop = $(window).scrollTop();
+
+   if (nowScrollTop > prevScrollTop) {
+     $('header').addClass('active');
+   } else {
+     $('header').removeClass('active');
+   }
+
+   prevScrollTop = nowScrollTop;
+ });
+
+
+
+
 });
-
-
-})
 
