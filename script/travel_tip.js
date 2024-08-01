@@ -1,7 +1,7 @@
-$(function(){
+$(function () {
 
- // header_web
- $('.header_inner nav>ul>li').on({
+  // header_web
+  $('.header_inner nav>ul>li').on({
 
     mouseover: function () {
       $('header').addClass('on');
@@ -31,18 +31,19 @@ $(function(){
 
 
 
-  $('.side_menu>.side_inner>ul>li').on({
-    mouseover: function () {
-      $(this).find('.submenu_2').stop(true).slideDown(300)
 
-    },
 
-    mouseout: function () {
-      $(this).find('.submenu_2').stop(true).slideUp()
+  // 서브메뉴
+  $('.side_menu>.side_inner>ul>li').click(function () {
+    let submenu_2 = $(this).find('.submenu_2')
 
-    }
+    //  li서브들 다올라감
+    $('.submenu_2').not(submenu_2).slideUp().removeClass('show');
+
+    // 선택된 li만 내려가게
+    submenu_2.stop(true).slideToggle().addClass('show');
+
   });
-
 
 
   // scroll
@@ -79,7 +80,7 @@ $(function(){
     });
 
 
-   
+
 
 
   });
@@ -122,8 +123,19 @@ $(function(){
 
     });
 
+    // 1200px이상에선 사라지게
+    if (size > 1200) {
+      $('.side').css({ display: 'none' })
+  
+    } else {
+      $('.side').css({ display: 'block' })
+  
+    }
 
   });
+
+
+
 
 
 

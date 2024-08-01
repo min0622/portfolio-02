@@ -23,11 +23,13 @@
     src: url(../font/Pretendard-Bold.otf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* 구글폰트 */
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); */
 /*  
  font-family: "Outfit", sans-serif;
  */
 
+ 
 :root {
     /* 메인컬러 지정 */
     --Scolor--: #1746A2;

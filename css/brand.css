@@ -1,4 +1,6 @@
 @import url(./common.css);
+
+
 #wrap {
     width: 100%;
     overflow: hidden;
@@ -720,7 +722,7 @@ footer {
     /* name */
     .name {
         max-width: 430px;
-        padding: 0 11%;
+        padding: 0 5%;
     }
 
     .name_border {

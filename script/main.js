@@ -35,38 +35,17 @@ $(function () {
 
 
 
-
+  // 서브메뉴
   $('.side_menu>.side_inner>ul>li').click(function () {
     let submenu_2 = $(this).find('.submenu_2')
 
     //  li서브들 다올라감
     $('.submenu_2').not(submenu_2).slideUp().removeClass('show');
 
-
     // 선택된 li만 내려가게
-    submenu_2.stop(true).slideToggle().toggleClass('show');
-
+    submenu_2.stop(true).slideToggle().addClass('show');
 
   });
-
-
-
-
-
-  // $('.side_menu>.side_inner>ul>li').on({
-  //   mouseover: function () {
-  //     $(this).find('.submenu_2').stop(true).slideDown(300)
-
-  //   },
-
-  //   mouseout: function () {
-  //     $(this).find('.submenu_2').stop(true).slideUp()
-
-  //   }
-  // });
-
-
-
 
 
 

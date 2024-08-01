@@ -1,68 +1,113 @@
-@import url(./common.css);
 
-
-
-
-/* wrap */
-#wrap {
+main {
     width: 100%;
     overflow: hidden;
+
     position: relative;
+    top: 0;
+    left: 0;
 }
 
-/* header */
-header {
-    background-color: #fff;
-    color: #000;
+.main_inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .flow_wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+main .flow_text_box {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    font-size: 150px;
+    color: var(--Scolor--);
+    opacity: .15;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* z-index: 1; */
+    background-color:salmon;
+
+}
+main .video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
-header::after {
-    border-top: 1px solid #EFEFEF;
-    background-color: #fff;
+main .video_box {
+    width: 50%;
+
+    height: fit-content;
+    padding-bottom: 28.13%;
+    padding-bottom: 50%;
+    border-radius: 120px;
+    /* overflow: hidden; */
+    /* background-color: gold; */
+    
+    
 }
 
-.submenu>li {
-    color: #000;
+
+main .video_box video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
-.header_inner nav>ul>li>a::before {
-    background-color: var(--Mcolor--);
-}
 
-.btn_box .sch {
-    background-image: url(../img/btn_1.png);
-}
 
-.btn_box .login {
-    background-image: url(../img/btn_2.png);
-}
+
+
+
+
+
+
+
+
+
 
 /* main */
 main {
     width: 100%;
     overflow: hidden;
+
     position: relative;
-
-
-    
-    height: 100vh;
-    padding: 80px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: gold; */
-
+    top: 0;
+    left: 0;
 }
 
 .main_inner {
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    height: 100%;
+
 }
 
 main .flow_text_box {
@@ -75,10 +120,12 @@ main .flow_text_box {
     color: var(--Scolor--);
     opacity: .15;
     position: absolute;
-
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     z-index: 1;
 
-    /* background-color: salmon; */
+    background-color: salmon;
 }
 
 @keyframes flow {
@@ -145,10 +192,12 @@ main .video_box {
     z-index: 2;
     
     border-radius: 120px;
+    /* overflow: hidden; */
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     
 }
 
@@ -163,6 +212,302 @@ main .video_box video {
     transform: translate(-50%, -50%);
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(./common.css);
+
+
+
+
+/* wrap */
+#wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* header */
+header {
+    background-color: #fff;
+    color: #000;
+}
+
+header::after {
+    border-top: 1px solid #EFEFEF;
+    background-color: #fff;
+}
+
+.submenu>li {
+    color: #000;
+}
+
+.header_inner nav>ul>li>a::before {
+    background-color: var(--Mcolor--);
+}
+
+.btn_box .sch {
+    background-image: url(../img/btn_1.png);
+}
+
+.btn_box .login {
+    background-image: url(../img/btn_2.png);
+}
+
+/* main */
+main {
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main_inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .flow_text_box {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    font-size: 150px;
+    color: var(--Scolor--);
+    opacity: .15;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+
+    background-color: salmon;
+}
+
+@keyframes flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes reverse_flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+main .flow_text_box span {
+    display: inline-block;
+}
+
+main .flow_text_box .flow_text {
+    white-space: nowrap;
+    height: 156px;
+    line-height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+main .flow_text_box .thin {
+    font-weight: 100;
+    animation: flow 30s linear infinite;
+}
+
+main .flow_text_box .semi {
+    font-weight: 600;
+    animation: reverse_flow 30s linear infinite;
+}
+
+main .flow_text_box .bold {
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 0 var(--Scolor--), -1px -1px 0 var(--Scolor--), 1px -1px 0 var(--Scolor--), -1px 1px 0 var(--Scolor--), 1px 1px 0 var(--Scolor--);
+    animation: flow 30s linear infinite;
+
+}
+
+/* vedio */
+
+
+main .video_box {
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 28.13%;
+    position: absolute;
+    z-index: 2;
+    
+    border-radius: 120px;
+    /* overflow: hidden; */
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+main .video_box video {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 수정본 */
+main {
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main_inner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .flow_text_box {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    font-size: 150px;
+    color: var(--Scolor--);
+    opacity: .15;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+
+    background-color: salmon;
+}
+main .video_box {
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 28.13%;
+    position: absolute;
+    z-index: 2;
+    
+    border-radius: 120px;
+    /* overflow: hidden; */
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+main .video_box video {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -251,11 +596,8 @@ main .video_box video {
     position: relative;
     margin: auto;
     margin-top: 130px;
-    background-color: #fff;
     padding: 0 20px;
-
-  
-
+background-color: #fff;
 }
 
 .s_hidden {
@@ -265,10 +607,8 @@ main .video_box video {
 #section_2 .section_head {
     width: 100%;
     text-align: center;
+    padding-top: 50px;
     margin-bottom: 30px;
-    padding-top: 100px;
-    padding-top: 10vh;
-    
 }
 
 #section_2 .title {
@@ -850,7 +1190,7 @@ body {
     main .video_box {
         width: 55%;
         padding-bottom: 30.94%;
-        border-radius: 110px;
+        /* border-radius: 110px; */
     }
 
     /* section_2 */
@@ -900,18 +1240,6 @@ body {
         line-height: 100px;
     }
 
-    main .video_box {
-        /* width: 58%;
-        padding-bottom: 32.63%; */
-        /* width: 55%;
-        padding-bottom: 30.94%; */
-        width: 60%;
-        padding-bottom: 33.75%;
-    }
-
-
-
-
     /* section_1 */
 
     #section_1 {
@@ -948,11 +1276,7 @@ body {
         padding: 0 16px;
 
     }
-    #section_2 .section_head {
-    /* padding-top: 50px; */
-    padding-top: 12vh;
 
-    }
     #section_2 .step_box .step,
     #section_2 .step_box .step_img img {
         height: 700px;
@@ -1122,10 +1446,8 @@ body {
     /* video */
 
     main .video_box {
-        width: 66%;
-        padding-bottom: 37.13%;
-        /* width: 60%;
-        padding-bottom: 33.75%; */
+        width: 60%;
+        padding-bottom: 33.75%;
         border-radius: 100px;
     }
 
@@ -1160,9 +1482,9 @@ margin-top: 10%;
     }
     /* section_2 */
     #section_2 .section_head {
-        padding-top: 15vh;
+        padding-top: 12vh;
     }
-  
+
     #section_2 .step_box .step-inner .text {
         padding: 0 11vw;
     }
@@ -1220,10 +1542,7 @@ margin-top: 10%;
 @media screen and (max-width:575px) {
 
     /* main */
-    main{
-        padding: 0;
-        display: block;
-    }
+  
 
     main .flow_text_box {
         font-size: 68px;
