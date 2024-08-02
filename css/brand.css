@@ -216,6 +216,7 @@ h3 {
     width: 100%;
     height: 600px;
     position: relative;
+    z-index: -1;
     margin-top: 250px;
     background-image: url(../img/sub/sub1/section3_.png);
     background-repeat: no-repeat;

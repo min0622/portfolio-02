@@ -156,6 +156,7 @@
     height: 650px;
     margin-top: 300px;
     position: relative;
+    z-index: -1;
     background-image: url(../img/sub/sub3/community.png);
     background-repeat: no-repeat;
     background-size: cover;
