@@ -8,13 +8,11 @@ $(function () {
   let mm = gsap.matchMedia();
 
 
-  // mm.add("(min-width: 576px)", () => {
-  // mm.add("(min-width: 991px)", () => {
   mm.add("(min-width: 1601px)", () => {
 
 
     const ani = gsap.timeline();
-    ani.from('main .video_box', { overflow:'hidden',borderRadius: 120 })
+    ani.from('main .video_box', { overflow:'hidden' })
     ani.to('main .video_box', { width: '100%', height: '110%' ,overflow:'hidden' })
       .to('main .video_box', { scale: 1.2 })
     ScrollTrigger.create({
@@ -36,12 +34,11 @@ $(function () {
 
   // 이상함 작동안되네 체크하기!! > 991 css도 같이 보기
   mm.add("(min-width: 1201px) and (max-width:1600px)", () => {
-  // mm.add("(min-width: 1101px) and (max-width:1600px)", () => {
 
 
     const ani = gsap.timeline();
-    ani.from('main .video_box', { overflow:'hidden', borderRadius: 110 })
-    ani.to('main .video_box', { width: '100%', height: '93%' ,overflow:'hidden' })
+    ani.from('main .video_box', { overflow:'hidden'})
+    ani.to('main .video_box', { width: '100%', height: '93%', overflow:'hidden' })
       .to('main .video_box', { scale: 1.2 })
     ScrollTrigger.create({
       animation: ani,
