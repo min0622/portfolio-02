@@ -82,7 +82,6 @@ $(function () {
 
     // top_btn
     let top = $(window).scrollTop();
-    // console.log(top)
 
     if (top >= 1200) {
       $('.top_btn').stop(true).fadeIn();

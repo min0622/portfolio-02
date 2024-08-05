@@ -52,7 +52,6 @@ $(function () {
 
   // scroll
 
-  // let spot = $('#section_1').offset().top;
 
 
   $(window).scroll(function () {
@@ -83,13 +82,11 @@ $(function () {
   });
 
 
-
   // menu_resize
 
   $(window).resize(function () {
 
     let size = innerWidth;
-    // console.log(size)
 
     $('.menu').click(function () {
 
@@ -141,11 +138,9 @@ $(function () {
   // section_3,4 arrow
   $('.tip').on({
     mouseover: function () {
-      // $(this).css({opacity:'1'});
       $(this).find('.arrow').addClass('b_on')
     },
     mouseout: function () {
-      // $(this).css({opacity:'.8'})
       $(this).find('.arrow').removeClass('b_on')
 
     }
@@ -166,7 +161,7 @@ $(function () {
 
 
 });
-// jquery
+
 
 
 
@@ -208,22 +203,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-   
-//  header 스크롤시 숨김, 보임
+
+  //  header 스크롤시 숨김, 보임
   let prevScrollTop = 0; // 전역 변수로 선언
 
   document.addEventListener("scroll", function () {
     const nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
-  
+
     if (nowScrollTop > prevScrollTop) {
       $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
     } else {
       $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
     }
-  
+
     prevScrollTop = nowScrollTop; // 현재 스크롤 값을 prevScrollTop에 저장
   });
-  
+
 
 
 

@@ -118,6 +118,14 @@ $(function () {
 
     });
 
+     // 1200px이상에선 사라지게
+     if (size > 1200) {
+      $('.side').css({ display: 'none' })
+
+    } else {
+      $('.side').css({ display: 'block' })
+
+    }
 
 
 
@@ -127,6 +135,9 @@ $(function () {
 
 
 });
+
+
+
 
 
 
