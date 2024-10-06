@@ -312,7 +312,6 @@ footer {
     .item {
         border-radius: 25px;
         height: fit-content;
-        /* padding: 80px 30px; */
         padding: 50px 30px;
 
     }
@@ -371,7 +370,6 @@ footer {
     .item {
         margin-bottom: 50px;
 
-        /* padding: 56px 30px; */
     }
 
     .item:nth-child(2n) {
@@ -395,16 +393,15 @@ footer {
 
     .i_keyword {
         margin-top: 40px;
-        /* font-size: 0.9rem; */
         font-size: 1rem;
     }
 
     .i_keyword ul {
-        gap: 10px;
+        gap: 12px;
     }
 
     .i_keyword ul li {
-        height: 40px;
+        height: 44px;
         border-radius: 5px;
     }
 
