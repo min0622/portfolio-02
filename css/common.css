@@ -24,7 +24,6 @@
 }
 
 
-
 :root {
     --Mcolor--: #5F9DF7;
     --Scolor--: #1746A2;
@@ -509,7 +508,7 @@ footer .top_btn {
 
 .t_btn>button {
     display: block;
-    width: 21px;
+    width: 24px;
     height: 24px;
     padding: 0;
     margin: 0;
@@ -594,7 +593,7 @@ footer .top_btn {
 
     .t_btn>button {
         width: 18px;
-        height: 21px;
+        height: 18px;
     }
 }
 
@@ -679,7 +678,7 @@ footer .top_btn {
 
     .t_btn>button {
         width: 14px;
-        height: 17px;
+        height: 14px;
     }
 
 }
