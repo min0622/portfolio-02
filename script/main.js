@@ -1,22 +1,27 @@
 $(function () {
+  
+  function webmenu(){
+    $('.header_inner nav>ul>li').on({
 
-  // header_web
-  $('.header_inner nav>ul>li').on({
+      mouseover: function () {
+        $('header').addClass('on');
+  
+        // 오버시, 밑줄발생
+        $(this).find('.m').addClass('m_line');
+        $('.header_inner nav .submenu, header::after').stop(true).slideDown();
+      },
+  
+      mouseout: function () {
+        $('header').removeClass('on');
+        $(this).find('.m').removeClass('m_line');
+        $('.header_inner nav .submenu, header::after').stop(true).slideUp(300);
+      }
+    });
+  };
+  webmenu();
 
-    mouseover: function () {
-      $('header').addClass('on');
 
-      // 오버시, 밑줄발생
-      $(this).find('.m').addClass('m_line')
-      $('.header_inner nav .submenu, header::after').stop(true).slideDown();
-    },
 
-    mouseout: function () {
-      $('header').removeClass('on');
-      $(this).find('.m').removeClass('m_line')
-      $('.header_inner nav .submenu, header::after').stop(true).slideUp(300);
-    }
-  })
 
 
 
@@ -25,12 +30,15 @@ $(function () {
   $('.menu').click(function () {
     $('.side_menu').stop(true).animate({ right: '0' }, 600);
     $('.side_bg').stop(true).delay(200).fadeIn();
+    $('body').css({overflow:'hidden'});
 
 
   });
   $('.close').click(function () {
     $('.side_menu').stop(true).animate({ right: '-100%' }, 600);
     $('.side_bg').stop(true).fadeOut();
+    $('body').css({overflow:'visible'});
+
   });
 
 

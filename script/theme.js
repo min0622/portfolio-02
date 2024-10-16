@@ -25,10 +25,13 @@ $(function () {
   $('.menu').click(function () {
     $('.side_menu').stop(true).animate({ right: '0' }, 600);
     $('.side_bg').stop(true).delay(200).fadeIn();
+    $('body').css({overflow:'hidden'});
   });
   $('.close').click(function () {
     $('.side_menu').stop(true).animate({ right: '-100%' }, 600);
     $('.side_bg').stop(true).fadeOut();
+    $('body').css({overflow:'visible'});
+
   });
 
   // 서브메뉴
