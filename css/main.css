@@ -645,8 +645,11 @@ main .video_box video {
     border-radius: 100%;
     position: relative;
     background-color: var(--Mcolor--);
+    transition: all .2s;
 }
-
+.more:hover{
+    background-color:#222;
+}
 .circle {
     width: 100%;
     height: 100%;
