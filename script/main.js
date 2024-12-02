@@ -85,7 +85,6 @@ $(function () {
     if (top >= 1200) {
       $('.top_btn').stop(true).fadeIn(300);
     } else {
-
       $('.top_btn').stop(true).fadeOut(300);
     }
 
